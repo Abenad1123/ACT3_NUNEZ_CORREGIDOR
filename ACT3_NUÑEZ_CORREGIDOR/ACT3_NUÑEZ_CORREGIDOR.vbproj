@@ -153,6 +153,22 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Functions.vb" />
+    <Compile Include="game forms\evade_a_missile_main.Designer.vb">
+      <DependentUpon>evade_a_missile_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="game forms\evade_a_missile_main.vb" />
+    <Compile Include="game forms\rock_paper_scissors_main.Designer.vb">
+      <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="game forms\rock_paper_scissors_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game forms\whack_a_mole_main.Designer.vb">
+      <DependentUpon>whack_a_mole_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="game forms\whack_a_mole_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -210,6 +226,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game forms\evade_a_missile_main.resx">
+      <DependentUpon>evade_a_missile_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game forms\rock_paper_scissors_main.resx">
+      <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game forms\whack_a_mole_main.resx">
+      <DependentUpon>whack_a_mole_main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -331,6 +356,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\game bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="game forms\game setting forms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
