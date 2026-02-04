@@ -22,6 +22,7 @@ Partial Class reactiontime_main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(reactiontime_main))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GamesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rockpaperscissors = New System.Windows.Forms.ToolStripMenuItem()
@@ -94,8 +95,9 @@ Partial Class reactiontime_main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "reactiontime_main"
-        Me.Text = "reactiontime"
+        Me.Text = "De La Salle Santiago Zobel"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)

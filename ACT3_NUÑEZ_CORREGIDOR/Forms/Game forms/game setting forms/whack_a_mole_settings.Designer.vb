@@ -30,6 +30,9 @@ Partial Class whack_a_mole_settings
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GamesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rockpaperscissors = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,9 +41,6 @@ Partial Class whack_a_mole_settings
         Me.reactiontime = New System.Windows.Forms.ToolStripMenuItem()
         Me.mathchallenge = New System.Windows.Forms.ToolStripMenuItem()
         Me.go_back = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -146,6 +146,37 @@ Partial Class whack_a_mole_settings
         Me.Label3.Text = "SETTINGS"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Easy", "Normal", "Meduim", "Hard", "Extreme"})
+        Me.ComboBox1.Location = New System.Drawing.Point(163, 183)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(154, 24)
+        Me.ComboBox1.TabIndex = 7
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(323, 183)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(96, 23)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "CHANGE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(82, 185)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(75, 20)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Difficulty"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -199,37 +230,6 @@ Partial Class whack_a_mole_settings
         Me.go_back.Name = "go_back"
         Me.go_back.Size = New System.Drawing.Size(77, 24)
         Me.go_back.Text = "Go Back"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Easy", "Normal", "Meduim", "Hard", "Extreme"})
-        Me.ComboBox1.Location = New System.Drawing.Point(163, 183)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(154, 24)
-        Me.ComboBox1.TabIndex = 7
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(323, 183)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(96, 23)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "CHANGE"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(82, 185)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 20)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Difficulty"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'whack_a_mole_settings
         '

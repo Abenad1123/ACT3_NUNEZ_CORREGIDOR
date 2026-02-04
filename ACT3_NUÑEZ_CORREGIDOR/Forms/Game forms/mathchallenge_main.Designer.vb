@@ -22,14 +22,15 @@ Partial Class mathchallenge_main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mathchallenge_main))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.go_back = New System.Windows.Forms.ToolStripMenuItem()
         Me.GamesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.rockpaperscissors = New System.Windows.Forms.ToolStripMenuItem()
         Me.fallingblock = New System.Windows.Forms.ToolStripMenuItem()
         Me.whackamole = New System.Windows.Forms.ToolStripMenuItem()
         Me.reactiontime = New System.Windows.Forms.ToolStripMenuItem()
         Me.self = New System.Windows.Forms.ToolStripMenuItem()
-        Me.go_back = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,6 +43,13 @@ Partial Class mathchallenge_main
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
         Me.MenuStrip1.TabIndex = 16
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'go_back
+        '
+        Me.go_back.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.home_icon
+        Me.go_back.Name = "go_back"
+        Me.go_back.Size = New System.Drawing.Size(97, 24)
+        Me.go_back.Text = "Go back"
         '
         'GamesToolStripMenuItem
         '
@@ -81,21 +89,15 @@ Partial Class mathchallenge_main
         Me.self.Size = New System.Drawing.Size(226, 26)
         Me.self.Text = "Math Challenge"
         '
-        'go_back
-        '
-        Me.go_back.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.home_icon
-        Me.go_back.Name = "go_back"
-        Me.go_back.Size = New System.Drawing.Size(97, 24)
-        Me.go_back.Text = "Go back"
-        '
         'mathchallenge_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "mathchallenge_main"
-        Me.Text = "mathchallenge"
+        Me.Text = "De La Salle Santiago Zobel"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
