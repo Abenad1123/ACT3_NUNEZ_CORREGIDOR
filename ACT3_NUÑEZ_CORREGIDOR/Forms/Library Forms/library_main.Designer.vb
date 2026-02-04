@@ -180,7 +180,6 @@ Partial Class library_main
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.BackgroundImage = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.abedadi__1_
         Me.TableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel2.ColumnCount = 6
         Me.TableLayoutPanel1.SetColumnSpan(Me.TableLayoutPanel2, 11)

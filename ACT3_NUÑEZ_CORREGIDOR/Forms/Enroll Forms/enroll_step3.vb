@@ -1,8 +1,6 @@
 ﻿Public Class enroll_step3
 
     Private Sub Meload(sender As Object, e As EventArgs) Handles MyBase.Load
-        Basic.ImgHover(about_btn, My.Resources.about_btn, My.Resources.about_btn_hover)
-        Basic.ImgHover(acad_btn, My.Resources.acad_calendar_btn, My.Resources.acad_calendar_btn_hover)
         Basic.ImgHover(go_back_btn, My.Resources.go_back_btn, My.Resources.go_back_btn_hover)
         Basic.ImgHover(continue_btn, My.Resources.cont_btn, My.Resources.cont_btn_hover)
     End Sub

@@ -1,8 +1,6 @@
 ﻿Public Class enroll_step2
 
     Private Sub Form_load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Basic.ImgHover(acad_btn, My.Resources.acad_calendar_btn, My.Resources.acad_calendar_btn_hover)
-        Basic.ImgHover(about_btn, My.Resources.about_btn, My.Resources.about_btn_hover)
         Basic.ImgHover(go_back_btn, My.Resources.go_back_btn, My.Resources.go_back_btn_hover)
         Basic.ImgHover(continue_btn, My.Resources.cont_btn, My.Resources.cont_btn_hover)
     End Sub
@@ -17,13 +15,13 @@
         Me.Close()
     End Sub
 
-    Private Sub acad_btn_Click(sender As Object, e As EventArgs) Handles acad_btn.Click
+    Private Sub acad_btn_Click(sender As Object, e As EventArgs)
         Dim acad As New acad_calendar()
         acad.Show()
         Me.Close()
     End Sub
 
-    Private Sub about_btn_Click(sender As Object, e As EventArgs) Handles about_btn.Click
+    Private Sub about_btn_Click(sender As Object, e As EventArgs)
         Dim about As New about()
         about.Show()
         Me.Close()

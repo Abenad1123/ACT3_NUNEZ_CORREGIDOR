@@ -80,15 +80,10 @@ Partial Class enroll_step3
         '
         'about_btn
         '
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.about_btn
-        Me.about_btn.Location = New System.Drawing.Point(1599, 84)
-        Me.about_btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.about_btn.Location = New System.Drawing.Point(1599, 85)
         Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(236, 75)
-        Me.about_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.about_btn.TabIndex = 2
+        Me.about_btn.Size = New System.Drawing.Size(100, 50)
+        Me.about_btn.TabIndex = 1
         Me.about_btn.TabStop = False
         '
         'PictureBox1
@@ -106,15 +101,10 @@ Partial Class enroll_step3
         '
         'acad_btn
         '
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.acad_calendar_btn
-        Me.acad_btn.Location = New System.Drawing.Point(1314, 84)
-        Me.acad_btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.acad_btn.Location = New System.Drawing.Point(1314, 85)
         Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(236, 75)
-        Me.acad_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.acad_btn.TabIndex = 1
+        Me.acad_btn.Size = New System.Drawing.Size(100, 50)
+        Me.acad_btn.TabIndex = 0
         Me.acad_btn.TabStop = False
         '
         'go_back_btn
@@ -557,7 +547,7 @@ Partial Class enroll_step3
         Me.CheckBox1.Text = "Shuttle - ₱ 50,000"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'Form6
+        'enroll_step3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -566,7 +556,7 @@ Partial Class enroll_step3
         Me.ClientSize = New System.Drawing.Size(1902, 1033)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form6"
+        Me.Name = "enroll_step3"
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.about_btn, System.ComponentModel.ISupportInitialize).EndInit()

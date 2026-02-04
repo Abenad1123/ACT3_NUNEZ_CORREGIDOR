@@ -135,14 +135,10 @@ Partial Class merch_main
         '
         'acad_btn
         '
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.acad_calendar_btn
         Me.acad_btn.Location = New System.Drawing.Point(1314, 87)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(236, 75)
-        Me.acad_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.acad_btn.TabIndex = 1
+        Me.acad_btn.Size = New System.Drawing.Size(100, 50)
+        Me.acad_btn.TabIndex = 0
         Me.acad_btn.TabStop = False
         '
         'go_back_btn
@@ -159,14 +155,10 @@ Partial Class merch_main
         '
         'about_btn
         '
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.about_btn
         Me.about_btn.Location = New System.Drawing.Point(1599, 87)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(236, 75)
-        Me.about_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.about_btn.TabIndex = 2
+        Me.about_btn.Size = New System.Drawing.Size(100, 50)
+        Me.about_btn.TabIndex = 5
         Me.about_btn.TabStop = False
         '
         'PictureBox1
@@ -814,14 +806,14 @@ Partial Class merch_main
         Me.ColumnHeader3.Text = "Total price"
         Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Form9
+        'merch_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1902, 1055)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form9"
+        Me.Name = "merch_main"
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)

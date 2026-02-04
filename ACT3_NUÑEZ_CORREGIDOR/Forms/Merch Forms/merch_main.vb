@@ -4,8 +4,6 @@ Public Class merch_main
     Private Sub Form9_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Basic.ImgHover(enroll_btn, My.Resources.enroll_btn, My.Resources.enroll_btn_hover)
         Basic.ImgHover(go_back_btn, My.Resources.go_back_btn, My.Resources.go_back_btn_hover)
-        Basic.ImgHover(acad_btn, My.Resources.acad_calendar_btn, My.Resources.acad_calendar_btn_hover)
-        Basic.ImgHover(about_btn, My.Resources.about_btn, My.Resources.about_btn_hover)
 
         If ListView1.Columns.Count >= 3 Then
             ListView1.Columns(0).Width = Panel2.ClientSize.Width * 0.5

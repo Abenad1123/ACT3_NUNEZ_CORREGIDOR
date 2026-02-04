@@ -25,19 +25,15 @@ Partial Class game_welcome
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(game_welcome))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.acad_btn = New System.Windows.Forms.PictureBox()
         Me.enroll_btn = New System.Windows.Forms.PictureBox()
         Me.store_btn = New System.Windows.Forms.PictureBox()
-        Me.about_btn = New System.Windows.Forms.PictureBox()
         Me.go_back_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.continue_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.store_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.continue_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,10 +57,8 @@ Partial Class game_welcome
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.5!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.acad_btn, 9, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.enroll_btn, 3, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.store_btn, 5, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.about_btn, 11, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.go_back_btn, 7, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -91,18 +85,6 @@ Partial Class game_welcome
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'acad_btn
-        '
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.acad_calendar_btn
-        Me.acad_btn.Location = New System.Drawing.Point(1407, 85)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(212, 75)
-        Me.acad_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.acad_btn.TabIndex = 9
-        Me.acad_btn.TabStop = False
-        '
         'enroll_btn
         '
         Me.enroll_btn.Dock = System.Windows.Forms.DockStyle.Fill
@@ -126,18 +108,6 @@ Partial Class game_welcome
         Me.store_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.store_btn.TabIndex = 13
         Me.store_btn.TabStop = False
-        '
-        'about_btn
-        '
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.about_btn
-        Me.about_btn.Location = New System.Drawing.Point(1644, 85)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(212, 75)
-        Me.about_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.about_btn.TabIndex = 15
-        Me.about_btn.TabStop = False
         '
         'go_back_btn
         '
@@ -184,22 +154,20 @@ Partial Class game_welcome
         Me.continue_btn.TabIndex = 2
         Me.continue_btn.TabStop = False
         '
-        'Form13
+        'game_welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1902, 1033)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form13"
+        Me.Name = "game_welcome"
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.store_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.continue_btn, System.ComponentModel.ISupportInitialize).EndInit()
@@ -209,10 +177,8 @@ Partial Class game_welcome
 
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents acad_btn As PictureBox
     Friend WithEvents enroll_btn As PictureBox
     Friend WithEvents store_btn As PictureBox
-    Friend WithEvents about_btn As PictureBox
     Friend WithEvents go_back_btn As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents continue_btn As PictureBox

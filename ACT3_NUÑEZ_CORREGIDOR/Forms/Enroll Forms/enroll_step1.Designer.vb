@@ -80,30 +80,6 @@ Partial Class enroll_step1
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(942, 438)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'acad_btn
-        '
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.acad_calendar_btn
-        Me.acad_btn.Location = New System.Drawing.Point(696, 48)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(102, 37)
-        Me.acad_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.acad_btn.TabIndex = 1
-        Me.acad_btn.TabStop = False
-        '
-        'about_btn
-        '
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.about_btn
-        Me.about_btn.Location = New System.Drawing.Point(813, 48)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(102, 37)
-        Me.about_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.about_btn.TabIndex = 2
-        Me.about_btn.TabStop = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill

@@ -24,8 +24,6 @@ Partial Class enroll_step2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(enroll_step2))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.acad_btn = New System.Windows.Forms.PictureBox()
-        Me.about_btn = New System.Windows.Forms.PictureBox()
         Me.go_back_btn = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -61,8 +59,6 @@ Partial Class enroll_step2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.continue_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -84,8 +80,6 @@ Partial Class enroll_step2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.acad_btn, 5, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.about_btn, 7, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.go_back_btn, 3, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 3)
@@ -100,32 +94,6 @@ Partial Class enroll_step2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.50516!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1902, 1033)
         Me.TableLayoutPanel1.TabIndex = 2
-        '
-        'acad_btn
-        '
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.acad_calendar_btn
-        Me.acad_btn.Location = New System.Drawing.Point(1314, 84)
-        Me.acad_btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(236, 75)
-        Me.acad_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.acad_btn.TabIndex = 1
-        Me.acad_btn.TabStop = False
-        '
-        'about_btn
-        '
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.about_btn
-        Me.about_btn.Location = New System.Drawing.Point(1599, 84)
-        Me.about_btn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(236, 75)
-        Me.about_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.about_btn.TabIndex = 2
-        Me.about_btn.TabStop = False
         '
         'go_back_btn
         '
@@ -615,8 +583,6 @@ Partial Class enroll_step2
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
@@ -629,8 +595,6 @@ Partial Class enroll_step2
 
     End Sub
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents acad_btn As PictureBox
-    Friend WithEvents about_btn As PictureBox
     Friend WithEvents go_back_btn As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel

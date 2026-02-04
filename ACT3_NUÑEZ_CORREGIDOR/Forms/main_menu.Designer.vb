@@ -25,33 +25,33 @@ Partial Class main_menu
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main_menu))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.hamburger_menu = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.acad_btn = New System.Windows.Forms.Button()
+        Me.about_btn = New System.Windows.Forms.Button()
+        Me.games_btn = New System.Windows.Forms.Button()
+        Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.menu_btn = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.enroll_btn = New System.Windows.Forms.PictureBox()
         Me.store_btn = New System.Windows.Forms.PictureBox()
         Me.library_btn = New System.Windows.Forms.PictureBox()
-        Me.hamburger_menu = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.acad_btn = New System.Windows.Forms.Button()
-        Me.about_btn = New System.Windows.Forms.Button()
-        Me.games_btn = New System.Windows.Forms.Button()
-        Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
-        Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.store_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.hamburger_menu.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.store_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -88,6 +88,130 @@ Partial Class main_menu
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(942, 493)
         Me.TableLayoutPanel1.TabIndex = 2
         '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.AutoScroll = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.FlowLayoutPanel1, 11)
+        Me.FlowLayoutPanel1.Controls.Add(Me.PictureBox2)
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 97)
+        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(942, 396)
+        Me.FlowLayoutPanel1.TabIndex = 10
+        '
+        'hamburger_menu
+        '
+        Me.hamburger_menu.BackColor = System.Drawing.Color.DarkGray
+        Me.hamburger_menu.Controls.Add(Me.TableLayoutPanel2)
+        Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
+        Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
+        Me.hamburger_menu.Name = "hamburger_menu"
+        Me.hamburger_menu.Size = New System.Drawing.Size(300, 493)
+        Me.hamburger_menu.TabIndex = 3
+        Me.hamburger_menu.Visible = False
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.acad_btn, 1, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.about_btn, 1, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.games_btn, 1, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.close_hamburger_btn, 2, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 9
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(300, 493)
+        Me.TableLayoutPanel2.TabIndex = 3
+        '
+        'acad_btn
+        '
+        Me.acad_btn.BackColor = System.Drawing.Color.Transparent
+        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.acad_btn.Location = New System.Drawing.Point(30, 121)
+        Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.acad_btn.Name = "acad_btn"
+        Me.acad_btn.Size = New System.Drawing.Size(240, 39)
+        Me.acad_btn.TabIndex = 0
+        Me.acad_btn.Text = "Academic Calendar"
+        Me.acad_btn.UseVisualStyleBackColor = False
+        '
+        'about_btn
+        '
+        Me.about_btn.BackColor = System.Drawing.Color.Transparent
+        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.about_btn.Location = New System.Drawing.Point(30, 160)
+        Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.about_btn.Name = "about_btn"
+        Me.about_btn.Size = New System.Drawing.Size(240, 39)
+        Me.about_btn.TabIndex = 3
+        Me.about_btn.Text = "About DLSZ"
+        Me.about_btn.UseVisualStyleBackColor = False
+        '
+        'games_btn
+        '
+        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.games_btn.Location = New System.Drawing.Point(30, 199)
+        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.games_btn.Name = "games_btn"
+        Me.games_btn.Size = New System.Drawing.Size(240, 39)
+        Me.games_btn.TabIndex = 4
+        Me.games_btn.Text = "Games"
+        Me.games_btn.UseVisualStyleBackColor = True
+        '
+        'hambuger_menu_timer
+        '
+        Me.hambuger_menu_timer.Interval = 15
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
+        Me.PictureBox4.Location = New System.Drawing.Point(30, 24)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(240, 83)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
+        '
+        'close_hamburger_btn
+        '
+        Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
+        Me.close_hamburger_btn.Location = New System.Drawing.Point(270, 0)
+        Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.Name = "close_hamburger_btn"
+        Me.close_hamburger_btn.Size = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.close_hamburger_btn.TabIndex = 5
+        Me.close_hamburger_btn.TabStop = False
+        '
         'menu_btn
         '
         Me.menu_btn.Dock = System.Windows.Forms.DockStyle.Fill
@@ -112,18 +236,6 @@ Partial Class main_menu
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
-        '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.AutoScroll = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.FlowLayoutPanel1, 11)
-        Me.FlowLayoutPanel1.Controls.Add(Me.PictureBox2)
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 97)
-        Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(942, 396)
-        Me.FlowLayoutPanel1.TabIndex = 10
         '
         'PictureBox2
         '
@@ -173,118 +285,6 @@ Partial Class main_menu
         Me.library_btn.TabIndex = 12
         Me.library_btn.TabStop = False
         '
-        'hamburger_menu
-        '
-        Me.hamburger_menu.BackColor = System.Drawing.Color.DarkGray
-        Me.hamburger_menu.Controls.Add(Me.TableLayoutPanel2)
-        Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
-        Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
-        Me.hamburger_menu.Name = "hamburger_menu"
-        Me.hamburger_menu.Size = New System.Drawing.Size(300, 493)
-        Me.hamburger_menu.TabIndex = 3
-        Me.hamburger_menu.Visible = False
-        '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.acad_btn, 1, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.about_btn, 1, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.games_btn, 1, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.close_hamburger_btn, 2, 0)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 9
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(300, 493)
-        Me.TableLayoutPanel2.TabIndex = 3
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
-        Me.PictureBox4.Location = New System.Drawing.Point(30, 24)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(240, 83)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 2
-        Me.PictureBox4.TabStop = False
-        '
-        'acad_btn
-        '
-        Me.acad_btn.BackColor = System.Drawing.Color.Transparent
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.acad_btn.Location = New System.Drawing.Point(30, 121)
-        Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
-        Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(240, 39)
-        Me.acad_btn.TabIndex = 0
-        Me.acad_btn.Text = "Academic Calendar"
-        Me.acad_btn.UseVisualStyleBackColor = False
-        '
-        'about_btn
-        '
-        Me.about_btn.BackColor = System.Drawing.Color.Transparent
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.about_btn.Location = New System.Drawing.Point(30, 160)
-        Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
-        Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(240, 39)
-        Me.about_btn.TabIndex = 3
-        Me.about_btn.Text = "About DLSZ"
-        Me.about_btn.UseVisualStyleBackColor = False
-        '
-        'games_btn
-        '
-        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.games_btn.Location = New System.Drawing.Point(30, 199)
-        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
-        Me.games_btn.Name = "games_btn"
-        Me.games_btn.Size = New System.Drawing.Size(240, 39)
-        Me.games_btn.TabIndex = 4
-        Me.games_btn.Text = "Games"
-        Me.games_btn.UseVisualStyleBackColor = True
-        '
-        'close_hamburger_btn
-        '
-        Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
-        Me.close_hamburger_btn.Location = New System.Drawing.Point(270, 0)
-        Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
-        Me.close_hamburger_btn.Name = "close_hamburger_btn"
-        Me.close_hamburger_btn.Size = New System.Drawing.Size(30, 24)
-        Me.close_hamburger_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.close_hamburger_btn.TabIndex = 5
-        Me.close_hamburger_btn.TabStop = False
-        '
-        'hambuger_menu_timer
-        '
-        Me.hambuger_menu_timer.Interval = 15
-        '
         'main_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -300,17 +300,17 @@ Partial Class main_menu
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.store_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.hamburger_menu.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.store_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

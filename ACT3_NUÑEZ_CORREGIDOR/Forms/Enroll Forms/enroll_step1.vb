@@ -3,8 +3,6 @@
     Private Sub Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Basic.ImgHover(go_back_btn, My.Resources.go_back_btn, My.Resources.go_back_btn_hover)
         Basic.ImgHover(store_btn, My.Resources.store_btn, My.Resources.store_btn_hover)
-        Basic.ImgHover(acad_btn, My.Resources.acad_calendar_btn, My.Resources.acad_calendar_btn_hover)
-        Basic.ImgHover(about_btn, My.Resources.about_btn, My.Resources.about_btn_hover)
         Basic.ImgHover(apply_btn, My.Resources.apply_btn, My.Resources.apply_btn_hover)
         Basic.ImgHover(library_btn, My.Resources.library_btn, My.Resources.library_btn_hover)
 
