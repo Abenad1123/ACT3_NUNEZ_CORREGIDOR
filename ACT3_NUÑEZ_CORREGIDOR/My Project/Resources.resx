@@ -124,6 +124,9 @@
   <data name="acad_calendar_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\acad_calendar_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="abedadi (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abedadi (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="library_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\library_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,8 +160,14 @@
   <data name="basic_info_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\basic_info_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reload_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\reload_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="store_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\store_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seach_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\seach_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="enroll_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\enroll_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,10 +223,7 @@
   <data name="main_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\main_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seach_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\seach_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reload_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\reload_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="game bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

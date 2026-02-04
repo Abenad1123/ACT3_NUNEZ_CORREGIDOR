@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form11
+Partial Class Form13
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,6 @@ Partial Class Form11
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form11))
 		Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.acad_btn = New System.Windows.Forms.PictureBox()
@@ -76,7 +75,7 @@ Partial Class Form11
 		Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.30928!))
 		Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.50516!))
 		Me.TableLayoutPanel1.Size = New System.Drawing.Size(1902, 1033)
-		Me.TableLayoutPanel1.TabIndex = 4
+		Me.TableLayoutPanel1.TabIndex = 5
 		'
 		'PictureBox1
 		'
@@ -153,7 +152,7 @@ Partial Class Form11
 		'
 		'TableLayoutPanel2
 		'
-		Me.TableLayoutPanel2.BackgroundImage = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.lrc_welcome_bg
+		Me.TableLayoutPanel2.BackgroundImage = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.game_bg
 		Me.TableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		Me.TableLayoutPanel2.ColumnCount = 3
 		Me.TableLayoutPanel1.SetColumnSpan(Me.TableLayoutPanel2, 13)
@@ -184,16 +183,14 @@ Partial Class Form11
 		Me.continue_btn.TabIndex = 2
 		Me.continue_btn.TabStop = False
 		'
-		'Form11
+		'Form13
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(1902, 1033)
 		Me.Controls.Add(Me.TableLayoutPanel1)
-		Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-		Me.Name = "Form11"
-		Me.Text = "De La Salle Santiago Zobel"
-		Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+		Me.Name = "Form13"
+		Me.Text = "Form13"
 		Me.TableLayoutPanel1.ResumeLayout(False)
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).EndInit()
