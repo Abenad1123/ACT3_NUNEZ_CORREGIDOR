@@ -79,6 +79,18 @@
     <Compile Include="Forms\Game forms\game setting forms\whack_a_mole_settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Game forms\mathchallenge.Designer.vb">
+      <DependentUpon>mathchallenge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Game forms\mathchallenge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Game forms\reactiontime.Designer.vb">
+      <DependentUpon>reactiontime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Game forms\reactiontime.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Functions\game_variables.vb" />
     <Compile Include="Forms\main_menu.vb">
       <SubType>Form</SubType>
@@ -208,6 +220,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Game forms\game_main_menu.resx">
       <DependentUpon>game_main_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Game forms\mathchallenge.resx">
+      <DependentUpon>mathchallenge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Game forms\reactiontime.resx">
+      <DependentUpon>reactiontime.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\main_menu.resx">
       <DependentUpon>main_menu.vb</DependentUpon>

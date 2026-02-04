@@ -113,7 +113,7 @@ Partial Class whack_a_mole_main
         '
         Me.fallingblock.Name = "fallingblock"
         Me.fallingblock.Size = New System.Drawing.Size(226, 26)
-        Me.fallingblock.Text = "Falling Block"
+        Me.fallingblock.Text = "Evade a Missile"
         '
         'whackamole
         '

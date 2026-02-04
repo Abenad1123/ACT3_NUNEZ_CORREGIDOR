@@ -33,6 +33,7 @@ Partial Class game_main_menu
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "game_main_menu"
         Me.Text = "De La Salle Santiago Zobel"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
 
     End Sub

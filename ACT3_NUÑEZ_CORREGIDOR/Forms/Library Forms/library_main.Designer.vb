@@ -188,7 +188,7 @@ Partial Class library_main
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.423346!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.506186!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.14954!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.DataGridView1, 4, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 4, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Button2, 4, 2)
@@ -232,7 +232,7 @@ Partial Class library_main
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.GridColor = System.Drawing.Color.Black
-        Me.DataGridView1.Location = New System.Drawing.Point(397, 31)
+        Me.DataGridView1.Location = New System.Drawing.Point(396, 31)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -240,7 +240,7 @@ Partial Class library_main
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 40
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(511, 202)
+        Me.DataGridView1.Size = New System.Drawing.Size(510, 202)
         Me.DataGridView1.TabIndex = 1
         '
         'Column6
@@ -305,17 +305,17 @@ Partial Class library_main
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.04534!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.70529!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Button3, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.TextBox1, 2, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Button4, 3, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(393, 15)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(392, 15)
         Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(0, 15, 0, 0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(519, 12)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(518, 12)
         Me.TableLayoutPanel3.TabIndex = 2
         '
         'Button3
@@ -339,7 +339,7 @@ Partial Class library_main
         Me.TextBox1.Location = New System.Drawing.Point(47, 0)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(275, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(274, 30)
         Me.TextBox1.TabIndex = 14
         '
         'Button4
@@ -348,7 +348,7 @@ Partial Class library_main
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ImageIndex = 0
-        Me.Button4.Location = New System.Drawing.Point(327, 0)
+        Me.Button4.Location = New System.Drawing.Point(326, 0)
         Me.Button4.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(32, 12)
@@ -362,7 +362,7 @@ Partial Class library_main
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.ImageIndex = 0
         Me.Button2.ImageList = Me.ImageList1
-        Me.Button2.Location = New System.Drawing.Point(397, 241)
+        Me.Button2.Location = New System.Drawing.Point(396, 241)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -388,7 +388,7 @@ Partial Class library_main
         Me.CheckedListBox1.Location = New System.Drawing.Point(24, 31)
         Me.CheckedListBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(286, 202)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(285, 202)
         Me.CheckedListBox1.TabIndex = 10
         '
         'TableLayoutPanel4
@@ -414,14 +414,14 @@ Partial Class library_main
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.35294!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.11765!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.38688!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(294, 159)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(293, 159)
         Me.TableLayoutPanel4.TabIndex = 11
         '
         'NumericUpDown2
         '
         Me.NumericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.NumericUpDown2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDown2.Location = New System.Drawing.Point(108, 50)
+        Me.NumericUpDown2.Location = New System.Drawing.Point(107, 50)
         Me.NumericUpDown2.Margin = New System.Windows.Forms.Padding(4)
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(182, 30)
@@ -431,7 +431,7 @@ Partial Class library_main
         '
         Me.NumericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.NumericUpDown1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumericUpDown1.Location = New System.Drawing.Point(108, 31)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(107, 31)
         Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(4)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(182, 30)
@@ -443,7 +443,7 @@ Partial Class library_main
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"All", "Fiction", "Non-fiction", "Fantasy", "Mystery", "Science Fiction", "Romance", "Educational"})
-        Me.ComboBox1.Location = New System.Drawing.Point(108, 12)
+        Me.ComboBox1.Location = New System.Drawing.Point(107, 12)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(182, 33)
@@ -454,7 +454,7 @@ Partial Class library_main
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(5, 46)
+        Me.Label3.Location = New System.Drawing.Point(4, 46)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(96, 19)
         Me.Label3.TabIndex = 10
@@ -466,7 +466,7 @@ Partial Class library_main
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(4, 8)
+        Me.Label1.Location = New System.Drawing.Point(3, 8)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(97, 19)
         Me.Label1.TabIndex = 7
@@ -477,7 +477,7 @@ Partial Class library_main
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(4, 27)
+        Me.Label2.Location = New System.Drawing.Point(3, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(97, 19)
         Me.Label2.TabIndex = 8
@@ -487,7 +487,7 @@ Partial Class library_main
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(108, 69)
+        Me.Button1.Location = New System.Drawing.Point(107, 69)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(90, 39)

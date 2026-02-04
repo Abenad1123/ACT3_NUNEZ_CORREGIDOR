@@ -22,11 +22,10 @@ Partial Class merch_main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(merch_main))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.acad_btn = New System.Windows.Forms.PictureBox()
         Me.go_back_btn = New System.Windows.Forms.PictureBox()
-        Me.about_btn = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.enroll_btn = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -76,10 +75,18 @@ Partial Class merch_main
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
+        Me.library_btn = New System.Windows.Forms.PictureBox()
+        Me.menu_btn = New System.Windows.Forms.PictureBox()
+        Me.hamburger_menu = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel14 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.acad_btn = New System.Windows.Forms.Button()
+        Me.about_btn = New System.Windows.Forms.Button()
+        Me.games_btn = New System.Windows.Forms.Button()
+        Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -99,6 +106,12 @@ Partial Class merch_main
         Me.TableLayoutPanel3.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.hamburger_menu.SuspendLayout()
+        Me.TableLayoutPanel14.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -116,12 +129,12 @@ Partial Class merch_main
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.acad_btn, 7, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.go_back_btn, 5, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.about_btn, 9, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.enroll_btn, 3, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.library_btn, 7, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.menu_btn, 9, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -130,46 +143,30 @@ Partial Class merch_main
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.185567!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.30928!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.50516!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1902, 1055)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(942, 493)
         Me.TableLayoutPanel1.TabIndex = 4
-        '
-        'acad_btn
-        '
-        Me.acad_btn.Location = New System.Drawing.Point(1314, 87)
-        Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(100, 50)
-        Me.acad_btn.TabIndex = 0
-        Me.acad_btn.TabStop = False
         '
         'go_back_btn
         '
         Me.go_back_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.go_back_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.go_back_btn
-        Me.go_back_btn.Location = New System.Drawing.Point(1029, 87)
+        Me.go_back_btn.Location = New System.Drawing.Point(509, 52)
         Me.go_back_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.go_back_btn.Name = "go_back_btn"
-        Me.go_back_btn.Size = New System.Drawing.Size(236, 75)
+        Me.go_back_btn.Size = New System.Drawing.Size(116, 42)
         Me.go_back_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.go_back_btn.TabIndex = 4
         Me.go_back_btn.TabStop = False
-        '
-        'about_btn
-        '
-        Me.about_btn.Location = New System.Drawing.Point(1599, 87)
-        Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(100, 50)
-        Me.about_btn.TabIndex = 5
-        Me.about_btn.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.De_La_Salle_Zobel
-        Me.PictureBox1.Location = New System.Drawing.Point(100, 25)
+        Me.PictureBox1.Location = New System.Drawing.Point(52, 25)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.TableLayoutPanel1.SetRowSpan(Me.PictureBox1, 2)
-        Me.PictureBox1.Size = New System.Drawing.Size(522, 160)
+        Me.PictureBox1.Size = New System.Drawing.Size(253, 67)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -178,10 +175,10 @@ Partial Class merch_main
         '
         Me.enroll_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.enroll_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.enroll_btn
-        Me.enroll_btn.Location = New System.Drawing.Point(744, 87)
+        Me.enroll_btn.Location = New System.Drawing.Point(369, 52)
         Me.enroll_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.enroll_btn.Name = "enroll_btn"
-        Me.enroll_btn.Size = New System.Drawing.Size(236, 75)
+        Me.enroll_btn.Size = New System.Drawing.Size(116, 42)
         Me.enroll_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.enroll_btn.TabIndex = 9
         Me.enroll_btn.TabStop = False
@@ -196,10 +193,10 @@ Partial Class merch_main
         Me.Panel1.Controls.Add(Me.TableLayoutPanel4)
         Me.Panel1.Controls.Add(Me.TableLayoutPanel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 190)
+        Me.Panel1.Location = New System.Drawing.Point(0, 97)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1902, 865)
+        Me.Panel1.Size = New System.Drawing.Size(942, 396)
         Me.Panel1.TabIndex = 10
         '
         'TableLayoutPanel5
@@ -220,7 +217,7 @@ Partial Class merch_main
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1881, 1080)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(921, 1080)
         Me.TableLayoutPanel5.TabIndex = 3
         '
         'Label1
@@ -228,10 +225,10 @@ Partial Class merch_main
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(94, 216)
+        Me.Label1.Location = New System.Drawing.Point(46, 216)
         Me.Label1.Margin = New System.Windows.Forms.Padding(0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1692, 108)
+        Me.Label1.Size = New System.Drawing.Size(828, 108)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "CHECKOUT"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -240,10 +237,10 @@ Partial Class merch_main
         '
         Me.Panel3.Controls.Add(Me.ListView2)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(219, 324)
+        Me.Panel3.Location = New System.Drawing.Point(171, 324)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(125, 0, 125, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1442, 540)
+        Me.Panel3.Size = New System.Drawing.Size(578, 540)
         Me.Panel3.TabIndex = 1
         '
         'ListView2
@@ -258,7 +255,7 @@ Partial Class merch_main
         Me.ListView2.Margin = New System.Windows.Forms.Padding(0)
         Me.ListView2.MultiSelect = False
         Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(1442, 540)
+        Me.ListView2.Size = New System.Drawing.Size(578, 540)
         Me.ListView2.TabIndex = 0
         Me.ListView2.UseCompatibleStateImageBehavior = False
         Me.ListView2.View = System.Windows.Forms.View.Details
@@ -291,7 +288,7 @@ Partial Class merch_main
         Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel9, 2, 2)
         Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel8, 2, 1)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(94, 864)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(46, 864)
         Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 4
@@ -299,7 +296,7 @@ Partial Class merch_main
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1692, 216)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(828, 216)
         Me.TableLayoutPanel6.TabIndex = 2
         '
         'TableLayoutPanel10
@@ -310,13 +307,13 @@ Partial Class merch_main
         Me.TableLayoutPanel10.Controls.Add(Me.Label5, 1, 0)
         Me.TableLayoutPanel10.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel10.Location = New System.Drawing.Point(149, 21)
+        Me.TableLayoutPanel10.Location = New System.Drawing.Point(73, 21)
         Me.TableLayoutPanel10.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
         Me.TableLayoutPanel10.RowCount = 1
         Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.Size = New System.Drawing.Size(694, 86)
+        Me.TableLayoutPanel10.Size = New System.Drawing.Size(339, 86)
         Me.TableLayoutPanel10.TabIndex = 1
         '
         'Label5
@@ -324,9 +321,9 @@ Partial Class merch_main
         Me.Label5.AutoSize = True
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(350, 0)
+        Me.Label5.Location = New System.Drawing.Point(172, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(341, 86)
+        Me.Label5.Size = New System.Drawing.Size(164, 86)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "₱ 0.00"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -338,7 +335,7 @@ Partial Class merch_main
         Me.Label4.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(3, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(341, 86)
+        Me.Label4.Size = New System.Drawing.Size(163, 86)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Total amount :"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -350,13 +347,13 @@ Partial Class merch_main
         Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel9.Controls.Add(Me.Panel5, 0, 0)
         Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel9.Location = New System.Drawing.Point(843, 107)
+        Me.TableLayoutPanel9.Location = New System.Drawing.Point(412, 107)
         Me.TableLayoutPanel9.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
         Me.TableLayoutPanel9.RowCount = 1
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(731, 86)
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(357, 86)
         Me.TableLayoutPanel9.TabIndex = 1
         '
         'Panel5
@@ -367,7 +364,7 @@ Partial Class merch_main
         Me.Panel5.Location = New System.Drawing.Point(225, 15)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(225, 15, 225, 15)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(281, 56)
+        Me.Panel5.Size = New System.Drawing.Size(1, 56)
         Me.Panel5.TabIndex = 0
         '
         'Button1
@@ -378,7 +375,7 @@ Partial Class merch_main
         Me.Button1.Location = New System.Drawing.Point(0, 0)
         Me.Button1.Margin = New System.Windows.Forms.Padding(0)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(281, 56)
+        Me.Button1.Size = New System.Drawing.Size(1, 56)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "PAY NOW"
         Me.Button1.UseVisualStyleBackColor = True
@@ -391,13 +388,13 @@ Partial Class merch_main
         Me.TableLayoutPanel8.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.TextBox1, 1, 0)
         Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(843, 21)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(412, 21)
         Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 1
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(731, 86)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(357, 86)
         Me.TableLayoutPanel8.TabIndex = 0
         '
         'Label2
@@ -407,7 +404,7 @@ Partial Class merch_main
         Me.Label2.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(3, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(359, 86)
+        Me.Label2.Size = New System.Drawing.Size(172, 86)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Amount tendered :"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -416,11 +413,11 @@ Partial Class merch_main
         '
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox1.Font = New System.Drawing.Font("Rockwell", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(365, 15)
+        Me.TextBox1.Location = New System.Drawing.Point(178, 15)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(0, 15, 0, 15)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(366, 56)
+        Me.TextBox1.Size = New System.Drawing.Size(179, 56)
         Me.TextBox1.TabIndex = 1
         '
         'TableLayoutPanel4
@@ -441,7 +438,7 @@ Partial Class merch_main
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.11111!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.7963!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.185185!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1881, 1080)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(921, 1080)
         Me.TableLayoutPanel4.TabIndex = 2
         '
         'TableLayoutPanel7
@@ -453,13 +450,13 @@ Partial Class merch_main
         Me.TableLayoutPanel7.Controls.Add(Me.ListBox2, 0, 0)
         Me.TableLayoutPanel7.Controls.Add(Me.TableLayoutPanel11, 2, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(78, 389)
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(38, 389)
         Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 2
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(979, 634)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(479, 634)
         Me.TableLayoutPanel7.TabIndex = 1
         '
         'ListBox2
@@ -472,7 +469,7 @@ Partial Class merch_main
         Me.ListBox2.Location = New System.Drawing.Point(20, 0)
         Me.ListBox2.Margin = New System.Windows.Forms.Padding(20, 0, 20, 0)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(411, 507)
+        Me.ListBox2.Size = New System.Drawing.Size(180, 507)
         Me.ListBox2.TabIndex = 0
         '
         'TableLayoutPanel11
@@ -484,7 +481,7 @@ Partial Class merch_main
         Me.TableLayoutPanel11.Controls.Add(Me.ListBox3, 0, 1)
         Me.TableLayoutPanel11.Controls.Add(Me.ListBox4, 0, 4)
         Me.TableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel11.Location = New System.Drawing.Point(534, 0)
+        Me.TableLayoutPanel11.Location = New System.Drawing.Point(260, 0)
         Me.TableLayoutPanel11.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
         Me.TableLayoutPanel11.RowCount = 5
@@ -493,7 +490,7 @@ Partial Class merch_main
         Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.5!))
-        Me.TableLayoutPanel11.Size = New System.Drawing.Size(445, 507)
+        Me.TableLayoutPanel11.Size = New System.Drawing.Size(219, 507)
         Me.TableLayoutPanel11.TabIndex = 1
         '
         'Label7
@@ -504,7 +501,7 @@ Partial Class merch_main
         Me.Label7.ForeColor = System.Drawing.SystemColors.Control
         Me.Label7.Location = New System.Drawing.Point(3, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(439, 50)
+        Me.Label7.Size = New System.Drawing.Size(213, 50)
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Regular Uniform"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -517,7 +514,7 @@ Partial Class merch_main
         Me.Label8.ForeColor = System.Drawing.SystemColors.Control
         Me.Label8.Location = New System.Drawing.Point(3, 265)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(439, 50)
+        Me.Label8.Size = New System.Drawing.Size(213, 50)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "PE Uniform"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -532,7 +529,7 @@ Partial Class merch_main
         Me.ListBox3.Location = New System.Drawing.Point(40, 50)
         Me.ListBox3.Margin = New System.Windows.Forms.Padding(40, 0, 40, 0)
         Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(365, 190)
+        Me.ListBox3.Size = New System.Drawing.Size(139, 190)
         Me.ListBox3.TabIndex = 2
         '
         'ListBox4
@@ -545,7 +542,7 @@ Partial Class merch_main
         Me.ListBox4.Location = New System.Drawing.Point(40, 315)
         Me.ListBox4.Margin = New System.Windows.Forms.Padding(40, 0, 40, 0)
         Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(365, 192)
+        Me.ListBox4.Size = New System.Drawing.Size(139, 192)
         Me.ListBox4.TabIndex = 3
         '
         'TableLayoutPanel12
@@ -555,14 +552,14 @@ Partial Class merch_main
         Me.TableLayoutPanel12.Controls.Add(Me.Panel4, 0, 0)
         Me.TableLayoutPanel12.Controls.Add(Me.TableLayoutPanel13, 0, 2)
         Me.TableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel12.Location = New System.Drawing.Point(1122, 389)
+        Me.TableLayoutPanel12.Location = New System.Drawing.Point(548, 389)
         Me.TableLayoutPanel12.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel12.Name = "TableLayoutPanel12"
         Me.TableLayoutPanel12.RowCount = 3
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel12.Size = New System.Drawing.Size(694, 634)
+        Me.TableLayoutPanel12.Size = New System.Drawing.Size(339, 634)
         Me.TableLayoutPanel12.TabIndex = 2
         '
         'Panel4
@@ -572,7 +569,7 @@ Partial Class merch_main
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(694, 443)
+        Me.Panel4.Size = New System.Drawing.Size(339, 443)
         Me.Panel4.TabIndex = 0
         '
         'ListView3
@@ -587,7 +584,7 @@ Partial Class merch_main
         Me.ListView3.Margin = New System.Windows.Forms.Padding(0)
         Me.ListView3.MultiSelect = False
         Me.ListView3.Name = "ListView3"
-        Me.ListView3.Size = New System.Drawing.Size(694, 443)
+        Me.ListView3.Size = New System.Drawing.Size(339, 443)
         Me.ListView3.TabIndex = 0
         Me.ListView3.UseCompatibleStateImageBehavior = False
         Me.ListView3.View = System.Windows.Forms.View.Details
@@ -627,7 +624,7 @@ Partial Class merch_main
         Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel13.Size = New System.Drawing.Size(694, 160)
+        Me.TableLayoutPanel13.Size = New System.Drawing.Size(339, 160)
         Me.TableLayoutPanel13.TabIndex = 1
         '
         'remove_supply
@@ -638,7 +635,7 @@ Partial Class merch_main
         Me.remove_supply.Location = New System.Drawing.Point(10, 56)
         Me.remove_supply.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
         Me.remove_supply.Name = "remove_supply"
-        Me.remove_supply.Size = New System.Drawing.Size(153, 47)
+        Me.remove_supply.Size = New System.Drawing.Size(64, 47)
         Me.remove_supply.TabIndex = 0
         Me.remove_supply.Text = "Remove item"
         Me.remove_supply.UseVisualStyleBackColor = True
@@ -648,10 +645,10 @@ Partial Class merch_main
         Me.clear_supply_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.clear_supply_btn.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clear_supply_btn.ForeColor = System.Drawing.Color.White
-        Me.clear_supply_btn.Location = New System.Drawing.Point(183, 56)
+        Me.clear_supply_btn.Location = New System.Drawing.Point(94, 56)
         Me.clear_supply_btn.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
         Me.clear_supply_btn.Name = "clear_supply_btn"
-        Me.clear_supply_btn.Size = New System.Drawing.Size(153, 47)
+        Me.clear_supply_btn.Size = New System.Drawing.Size(64, 47)
         Me.clear_supply_btn.TabIndex = 1
         Me.clear_supply_btn.Text = "Clear items"
         Me.clear_supply_btn.UseVisualStyleBackColor = True
@@ -661,10 +658,10 @@ Partial Class merch_main
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button3.Font = New System.Drawing.Font("Rockwell", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(460, 56)
+        Me.Button3.Location = New System.Drawing.Point(228, 56)
         Me.Button3.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(224, 47)
+        Me.Button3.Size = New System.Drawing.Size(101, 47)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Proceed to checkout"
         Me.Button3.UseVisualStyleBackColor = True
@@ -686,7 +683,7 @@ Partial Class merch_main
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.40741!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.11111!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.57407!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1881, 1080)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(921, 1080)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'TableLayoutPanel2
@@ -702,14 +699,14 @@ Partial Class merch_main
         Me.TableLayoutPanel2.Controls.Add(Me.clear_cart_btn, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.add_to_cart, 4, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(878, 900)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(429, 900)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 3
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.00133!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33555!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.66311!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1003, 180)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(492, 180)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'remove_item
@@ -717,10 +714,10 @@ Partial Class merch_main
         Me.remove_item.Dock = System.Windows.Forms.DockStyle.Fill
         Me.remove_item.Font = New System.Drawing.Font("Rockwell", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.remove_item.ForeColor = System.Drawing.Color.White
-        Me.remove_item.Location = New System.Drawing.Point(95, 41)
+        Me.remove_item.Location = New System.Drawing.Point(51, 41)
         Me.remove_item.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
         Me.remove_item.Name = "remove_item"
-        Me.remove_item.Size = New System.Drawing.Size(180, 50)
+        Me.remove_item.Size = New System.Drawing.Size(78, 50)
         Me.remove_item.TabIndex = 3
         Me.remove_item.Text = "Remove item"
         Me.remove_item.UseVisualStyleBackColor = True
@@ -730,10 +727,10 @@ Partial Class merch_main
         Me.clear_cart_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.clear_cart_btn.Font = New System.Drawing.Font("Rockwell", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.clear_cart_btn.ForeColor = System.Drawing.Color.White
-        Me.clear_cart_btn.Location = New System.Drawing.Point(295, 41)
+        Me.clear_cart_btn.Location = New System.Drawing.Point(149, 41)
         Me.clear_cart_btn.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
         Me.clear_cart_btn.Name = "clear_cart_btn"
-        Me.clear_cart_btn.Size = New System.Drawing.Size(180, 50)
+        Me.clear_cart_btn.Size = New System.Drawing.Size(78, 50)
         Me.clear_cart_btn.TabIndex = 0
         Me.clear_cart_btn.Text = "Clear items"
         Me.clear_cart_btn.UseVisualStyleBackColor = True
@@ -743,10 +740,10 @@ Partial Class merch_main
         Me.add_to_cart.Dock = System.Windows.Forms.DockStyle.Fill
         Me.add_to_cart.Font = New System.Drawing.Font("Rockwell", 13.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.add_to_cart.ForeColor = System.Drawing.Color.White
-        Me.add_to_cart.Location = New System.Drawing.Point(645, 41)
+        Me.add_to_cart.Location = New System.Drawing.Point(320, 41)
         Me.add_to_cart.Margin = New System.Windows.Forms.Padding(10, 5, 10, 5)
         Me.add_to_cart.Name = "add_to_cart"
-        Me.add_to_cart.Size = New System.Drawing.Size(260, 50)
+        Me.add_to_cart.Size = New System.Drawing.Size(117, 50)
         Me.add_to_cart.TabIndex = 2
         Me.add_to_cart.Text = "Proceed to checkout"
         Me.add_to_cart.UseVisualStyleBackColor = True
@@ -759,20 +756,20 @@ Partial Class merch_main
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 47
         Me.ListBox1.Items.AddRange(New Object() {"Cap - ₱ 300.00", "Tumbler - ₱ 900.00", "Sweatshirt - ₱ 890.00", "Lanyard - ₱ 200.00", "Tote Bag - ₱ 300.00", "Mug - ₱ 300.00"})
-        Me.ListBox1.Location = New System.Drawing.Point(1078, 165)
+        Me.ListBox1.Location = New System.Drawing.Point(629, 165)
         Me.ListBox1.Margin = New System.Windows.Forms.Padding(200, 3, 200, 3)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(603, 343)
+        Me.ListBox1.Size = New System.Drawing.Size(92, 343)
         Me.ListBox1.TabIndex = 2
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.ListView1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(978, 531)
+        Me.Panel2.Location = New System.Drawing.Point(529, 531)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(100, 20, 100, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(803, 369)
+        Me.Panel2.Size = New System.Drawing.Size(292, 369)
         Me.Panel2.TabIndex = 3
         '
         'ListView1
@@ -787,7 +784,7 @@ Partial Class merch_main
         Me.ListView1.Margin = New System.Windows.Forms.Padding(0)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Scrollable = False
-        Me.ListView1.Size = New System.Drawing.Size(803, 369)
+        Me.ListView1.Size = New System.Drawing.Size(292, 369)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -806,20 +803,156 @@ Partial Class merch_main
         Me.ColumnHeader3.Text = "Total price"
         Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'hambuger_menu_timer
+        '
+        Me.hambuger_menu_timer.Interval = 15
+        '
+        'library_btn
+        '
+        Me.library_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.library_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.library_btn
+        Me.library_btn.Location = New System.Drawing.Point(649, 52)
+        Me.library_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.library_btn.Name = "library_btn"
+        Me.library_btn.Size = New System.Drawing.Size(116, 42)
+        Me.library_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.library_btn.TabIndex = 13
+        Me.library_btn.TabStop = False
+        '
+        'menu_btn
+        '
+        Me.menu_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.menu_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.menu_btn
+        Me.menu_btn.Location = New System.Drawing.Point(789, 52)
+        Me.menu_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.menu_btn.Name = "menu_btn"
+        Me.menu_btn.Size = New System.Drawing.Size(116, 42)
+        Me.menu_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.menu_btn.TabIndex = 14
+        Me.menu_btn.TabStop = False
+        '
+        'hamburger_menu
+        '
+        Me.hamburger_menu.BackColor = System.Drawing.Color.DarkGray
+        Me.hamburger_menu.Controls.Add(Me.TableLayoutPanel14)
+        Me.hamburger_menu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
+        Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
+        Me.hamburger_menu.Name = "hamburger_menu"
+        Me.hamburger_menu.Size = New System.Drawing.Size(300, 493)
+        Me.hamburger_menu.TabIndex = 5
+        Me.hamburger_menu.Visible = False
+        '
+        'TableLayoutPanel14
+        '
+        Me.TableLayoutPanel14.ColumnCount = 3
+        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel14.Controls.Add(Me.PictureBox4, 1, 1)
+        Me.TableLayoutPanel14.Controls.Add(Me.acad_btn, 1, 3)
+        Me.TableLayoutPanel14.Controls.Add(Me.about_btn, 1, 4)
+        Me.TableLayoutPanel14.Controls.Add(Me.games_btn, 1, 5)
+        Me.TableLayoutPanel14.Controls.Add(Me.close_hamburger_btn, 2, 0)
+        Me.TableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel14.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel14.Name = "TableLayoutPanel14"
+        Me.TableLayoutPanel14.RowCount = 9
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
+        Me.TableLayoutPanel14.Size = New System.Drawing.Size(300, 493)
+        Me.TableLayoutPanel14.TabIndex = 3
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
+        Me.PictureBox4.Location = New System.Drawing.Point(30, 24)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(240, 83)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
+        '
+        'acad_btn
+        '
+        Me.acad_btn.BackColor = System.Drawing.Color.Transparent
+        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.acad_btn.Location = New System.Drawing.Point(30, 121)
+        Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.acad_btn.Name = "acad_btn"
+        Me.acad_btn.Size = New System.Drawing.Size(240, 39)
+        Me.acad_btn.TabIndex = 0
+        Me.acad_btn.Text = "Academic Calendar"
+        Me.acad_btn.UseVisualStyleBackColor = False
+        '
+        'about_btn
+        '
+        Me.about_btn.BackColor = System.Drawing.Color.Transparent
+        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.about_btn.Location = New System.Drawing.Point(30, 160)
+        Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.about_btn.Name = "about_btn"
+        Me.about_btn.Size = New System.Drawing.Size(240, 39)
+        Me.about_btn.TabIndex = 3
+        Me.about_btn.Text = "About DLSZ"
+        Me.about_btn.UseVisualStyleBackColor = False
+        '
+        'games_btn
+        '
+        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.games_btn.Location = New System.Drawing.Point(30, 199)
+        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.games_btn.Name = "games_btn"
+        Me.games_btn.Size = New System.Drawing.Size(240, 39)
+        Me.games_btn.TabIndex = 4
+        Me.games_btn.Text = "Games"
+        Me.games_btn.UseVisualStyleBackColor = True
+        '
+        'close_hamburger_btn
+        '
+        Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
+        Me.close_hamburger_btn.Location = New System.Drawing.Point(270, 0)
+        Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.Name = "close_hamburger_btn"
+        Me.close_hamburger_btn.Size = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.close_hamburger_btn.TabIndex = 5
+        Me.close_hamburger_btn.TabStop = False
+        '
         'merch_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1902, 1055)
+        Me.ClientSize = New System.Drawing.Size(942, 493)
+        Me.Controls.Add(Me.hamburger_menu)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "merch_main"
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
@@ -843,15 +976,19 @@ Partial Class merch_main
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.hamburger_menu.ResumeLayout(False)
+        Me.TableLayoutPanel14.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents acad_btn As PictureBox
     Friend WithEvents go_back_btn As PictureBox
-    Friend WithEvents about_btn As PictureBox
     Friend WithEvents enroll_btn As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
@@ -900,4 +1037,14 @@ Partial Class merch_main
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
+    Public WithEvents hambuger_menu_timer As Timer
+    Friend WithEvents library_btn As PictureBox
+    Friend WithEvents menu_btn As PictureBox
+    Friend WithEvents hamburger_menu As Panel
+    Friend WithEvents TableLayoutPanel14 As TableLayoutPanel
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents acad_btn As Button
+    Friend WithEvents about_btn As Button
+    Friend WithEvents games_btn As Button
+    Friend WithEvents close_hamburger_btn As PictureBox
 End Class

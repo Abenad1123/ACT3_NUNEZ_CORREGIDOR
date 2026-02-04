@@ -975,7 +975,7 @@ Partial Class enroll_receipt
         Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
         Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.hamburger_menu.Name = "hamburger_menu"
-        Me.hamburger_menu.Size = New System.Drawing.Size(300, 493)
+        Me.hamburger_menu.Size = New System.Drawing.Size(0, 493)
         Me.hamburger_menu.TabIndex = 5
         Me.hamburger_menu.Visible = False
         '
@@ -1003,18 +1003,18 @@ Partial Class enroll_receipt
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(300, 493)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(0, 493)
         Me.TableLayoutPanel4.TabIndex = 3
         '
         'PictureBox4
         '
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
-        Me.PictureBox4.Location = New System.Drawing.Point(30, 24)
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 24)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(240, 83)
+        Me.PictureBox4.Size = New System.Drawing.Size(1, 83)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 2
         Me.PictureBox4.TabStop = False
@@ -1025,11 +1025,11 @@ Partial Class enroll_receipt
         Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.acad_btn.Location = New System.Drawing.Point(30, 121)
+        Me.acad_btn.Location = New System.Drawing.Point(0, 121)
         Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(240, 39)
+        Me.acad_btn.Size = New System.Drawing.Size(1, 39)
         Me.acad_btn.TabIndex = 0
         Me.acad_btn.Text = "Academic Calendar"
         Me.acad_btn.UseVisualStyleBackColor = False
@@ -1040,11 +1040,11 @@ Partial Class enroll_receipt
         Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.about_btn.Location = New System.Drawing.Point(30, 160)
+        Me.about_btn.Location = New System.Drawing.Point(0, 160)
         Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(240, 39)
+        Me.about_btn.Size = New System.Drawing.Size(1, 39)
         Me.about_btn.TabIndex = 3
         Me.about_btn.Text = "About DLSZ"
         Me.about_btn.UseVisualStyleBackColor = False
@@ -1054,11 +1054,11 @@ Partial Class enroll_receipt
         Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.games_btn.Location = New System.Drawing.Point(30, 199)
+        Me.games_btn.Location = New System.Drawing.Point(0, 199)
         Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.games_btn.Name = "games_btn"
-        Me.games_btn.Size = New System.Drawing.Size(240, 39)
+        Me.games_btn.Size = New System.Drawing.Size(1, 39)
         Me.games_btn.TabIndex = 4
         Me.games_btn.Text = "Games"
         Me.games_btn.UseVisualStyleBackColor = True
@@ -1067,11 +1067,11 @@ Partial Class enroll_receipt
         '
         Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
-        Me.close_hamburger_btn.Location = New System.Drawing.Point(270, 0)
+        Me.close_hamburger_btn.Location = New System.Drawing.Point(0, 0)
         Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
         Me.close_hamburger_btn.Name = "close_hamburger_btn"
-        Me.close_hamburger_btn.Size = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.Size = New System.Drawing.Size(1, 24)
         Me.close_hamburger_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.close_hamburger_btn.TabIndex = 5
         Me.close_hamburger_btn.TabStop = False

@@ -104,6 +104,7 @@ Partial Class main_menu
         '
         Me.hamburger_menu.BackColor = System.Drawing.Color.DarkGray
         Me.hamburger_menu.Controls.Add(Me.TableLayoutPanel2)
+        Me.hamburger_menu.Dock = System.Windows.Forms.DockStyle.Left
         Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
         Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.hamburger_menu.Name = "hamburger_menu"

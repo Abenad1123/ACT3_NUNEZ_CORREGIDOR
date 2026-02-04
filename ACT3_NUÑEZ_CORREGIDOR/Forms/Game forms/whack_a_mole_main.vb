@@ -27,11 +27,11 @@
     End Sub
 
     Private Sub Game4_Load(sender As Object, e As EventArgs) Handles reactiontime.Click
-        OpenForm(Of enroll_step1)(Me)
+        OpenForm(Of reactiontime)(Me)
     End Sub
 
     Private Sub Game5_Load(sender As Object, e As EventArgs) Handles mathchallenge.Click
-        OpenForm(Of enroll_step1)(Me)
+        OpenForm(Of mathchallenge)(Me)
     End Sub
 
 
