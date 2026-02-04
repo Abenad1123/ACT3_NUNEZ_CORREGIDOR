@@ -1,9 +1,8 @@
 ﻿Public Class whack_a_mole_main
-    Dim standard_timeDuration As Integer
 
     Dim timeDuration As Integer
     Dim playerScore As Integer
-    Dim highestPlayerScore As Integer
+
     Dim inactiveMoles As New List(Of PictureBox)
     Dim activeMoles As New List(Of PictureBox)
 
@@ -13,7 +12,9 @@
     Dim hammer_idle As New Cursor(New IO.MemoryStream(My.Resources.hammer_idle))
 
     Dim GameRunning As Boolean = False
-
+    Private Sub go_back_click(sender As Object, e As EventArgs) Handles go_back.Click
+        OpenForm(Of main_menu)(Me)
+    End Sub
     Private Sub Game1_Load(sender As Object, e As EventArgs) Handles rockpaperscissors.Click
         OpenForm(Of rock_paper_scissors_main)(Me)
     End Sub
@@ -27,11 +28,11 @@
     End Sub
 
     Private Sub Game4_Load(sender As Object, e As EventArgs) Handles reactiontime.Click
-        OpenForm(Of reactiontime)(Me)
+        OpenForm(Of reactiontime_main)(Me)
     End Sub
 
     Private Sub Game5_Load(sender As Object, e As EventArgs) Handles mathchallenge.Click
-        OpenForm(Of mathchallenge)(Me)
+        OpenForm(Of mathchallenge_main)(Me)
     End Sub
 
 
@@ -60,7 +61,7 @@
             Label2.Text = "TIME LEFT : " & timeDuration & "s"
             If timeDuration <= 0 Then
                 GameRunning = False
-                If playerScore > highestPlayerScore Then
+                If playerScore > game_var.wam_highestPlayerScore Then
                     MessageBox.Show("Time's up! Your score: " & playerScore & ". Wow! you achieved the highest score")
                 Else
                     MessageBox.Show("Time's up! Your score: " & playerScore)
@@ -90,7 +91,7 @@
 
     Private Async Sub IndivMoleDespawn(mole As PictureBox)
         If activeMoles.Contains(mole) Then
-            Await Task.Delay(rnd.Next(2000, 4000))
+            Await Task.Delay(rnd.Next(game_var.wam_mole_despawnTime * 2, game_var.wam_mole_despawnTime * 4))
             activeMoles.Remove(mole)
             inactiveMoles.Add(mole)
             mole.Image = My.Resources.mole_empty
@@ -99,10 +100,10 @@
 
     Private Sub InitialData()
         inactiveMoles = New List(Of PictureBox) From {PictureBox1, PictureBox2, PictureBox3, PictureBox4, PictureBox5, PictureBox6}
-        timeDuration = standard_timeDuration
+        timeDuration = game_var.standard_timeDuration
         playerScore = 0
         Label1.Text = "SCORE : " & playerScore
-        Label3.Text = "HIGHEST SCORE : " & highestPlayerScore
+        Label3.Text = "HIGHEST SCORE : " & game_var.wam_highestPlayerScore
     End Sub
 
     Private Sub Btn1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -141,9 +142,9 @@
         If activeMoles.Contains(mole) Then
             playerScore += 1
             Label1.Text = "SCORE : " & playerScore
-            If playerScore > highestPlayerScore Then
-                highestPlayerScore = playerScore
-                Label3.Text = "HIGHEST SCORE : " & highestPlayerScore
+            If playerScore > game_var.wam_highestPlayerScore Then
+                game_var.wam_highestPlayerScore = playerScore
+                Label3.Text = "HIGHEST SCORE : " & game_var.wam_highestPlayerScore
             End If
             MoleAnimate(mole)
 

@@ -38,6 +38,9 @@ Partial Class whack_a_mole_settings
         Me.reactiontime = New System.Windows.Forms.ToolStripMenuItem()
         Me.mathchallenge = New System.Windows.Forms.ToolStripMenuItem()
         Me.go_back = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -56,13 +59,16 @@ Partial Class whack_a_mole_settings
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.ComboBox1, 1, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Button3, 2, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 6)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 28)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 14
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.13744!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.080569!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
@@ -82,9 +88,10 @@ Partial Class whack_a_mole_settings
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(75, 127)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(54, 125)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 16)
+        Me.Label2.Size = New System.Drawing.Size(103, 20)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Change time"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -101,7 +108,7 @@ Partial Class whack_a_mole_settings
         '
         Me.Button2.Location = New System.Drawing.Point(323, 123)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(96, 23)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "CHANGE"
         Me.Button2.UseVisualStyleBackColor = True
@@ -110,9 +117,10 @@ Partial Class whack_a_mole_settings
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 67)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(21, 65)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 16)
+        Me.Label1.Size = New System.Drawing.Size(136, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Reset high score"
         '
@@ -128,12 +136,15 @@ Partial Class whack_a_mole_settings
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label3, 3)
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(163, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(137, 29)
+        Me.Label3.Size = New System.Drawing.Size(474, 47)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "SETTINGS"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MenuStrip1
         '
@@ -189,6 +200,37 @@ Partial Class whack_a_mole_settings
         Me.go_back.Size = New System.Drawing.Size(77, 24)
         Me.go_back.Text = "Go Back"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Easy", "Normal", "Meduim", "Hard", "Extreme"})
+        Me.ComboBox1.Location = New System.Drawing.Point(163, 183)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(154, 24)
+        Me.ComboBox1.TabIndex = 7
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(323, 183)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(96, 23)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "CHANGE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(82, 185)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(75, 20)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "Difficulty"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'whack_a_mole_settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -223,4 +265,7 @@ Partial Class whack_a_mole_settings
     Friend WithEvents reactiontime As ToolStripMenuItem
     Friend WithEvents mathchallenge As ToolStripMenuItem
     Friend WithEvents go_back As ToolStripMenuItem
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label4 As Label
 End Class

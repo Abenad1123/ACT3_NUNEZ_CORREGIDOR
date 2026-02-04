@@ -43,6 +43,7 @@ Partial Class whack_a_mole_main
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.go_back = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -89,7 +90,7 @@ Partial Class whack_a_mole_main
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GamesToolStripMenuItem, Me.SettingsToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.go_back, Me.GamesToolStripMenuItem, Me.SettingsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1141, 28)
@@ -99,8 +100,9 @@ Partial Class whack_a_mole_main
         'GamesToolStripMenuItem
         '
         Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.reactiontime, Me.mathchallenge})
+        Me.GamesToolStripMenuItem.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.game_icon
         Me.GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
-        Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
+        Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(88, 24)
         Me.GamesToolStripMenuItem.Text = "Games"
         '
         'rockpaperscissors
@@ -136,8 +138,9 @@ Partial Class whack_a_mole_main
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.SettingsToolStripMenuItem.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.settings_icon
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'Button7
@@ -274,6 +277,13 @@ Partial Class whack_a_mole_main
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1141, 616)
         Me.TableLayoutPanel1.TabIndex = 14
         '
+        'go_back
+        '
+        Me.go_back.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.home_icon
+        Me.go_back.Name = "go_back"
+        Me.go_back.Size = New System.Drawing.Size(97, 24)
+        Me.go_back.Text = "Go back"
+        '
         'whack_a_mole_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -321,4 +331,5 @@ Partial Class whack_a_mole_main
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents go_back As ToolStripMenuItem
 End Class

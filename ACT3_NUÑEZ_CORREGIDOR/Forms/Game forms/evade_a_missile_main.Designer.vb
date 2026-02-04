@@ -23,86 +23,51 @@ Partial Class evade_a_missile_main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(evade_a_missile_main))
-        Me.mathchallenge = New System.Windows.Forms.ToolStripMenuItem()
-        Me.whackamole = New System.Windows.Forms.ToolStripMenuItem()
-        Me.fallingblock = New System.Windows.Forms.ToolStripMenuItem()
-        Me.rockpaperscissors = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GamesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.reactiontime = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.go_back = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GamesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.rockpaperscissors = New System.Windows.Forms.ToolStripMenuItem()
+        Me.fallingblock = New System.Windows.Forms.ToolStripMenuItem()
+        Me.whackamole = New System.Windows.Forms.ToolStripMenuItem()
+        Me.reactiontime = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mathchallenge = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'mathchallenge
-        '
-        Me.mathchallenge.Name = "mathchallenge"
-        Me.mathchallenge.Size = New System.Drawing.Size(226, 26)
-        Me.mathchallenge.Text = "Math Challenge"
-        '
-        'whackamole
-        '
-        Me.whackamole.Name = "whackamole"
-        Me.whackamole.Size = New System.Drawing.Size(226, 26)
-        Me.whackamole.Text = "Whack a Mole"
-        '
-        'fallingblock
-        '
-        Me.fallingblock.Name = "fallingblock"
-        Me.fallingblock.Size = New System.Drawing.Size(226, 26)
-        Me.fallingblock.Text = "Evade the Missle"
-        '
-        'rockpaperscissors
-        '
-        Me.rockpaperscissors.Name = "rockpaperscissors"
-        Me.rockpaperscissors.Size = New System.Drawing.Size(226, 26)
-        Me.rockpaperscissors.Text = "Rock, Paper, Scissors"
-        '
-        'GamesToolStripMenuItem
-        '
-        Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.reactiontime, Me.mathchallenge})
-        Me.GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
-        Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
-        Me.GamesToolStripMenuItem.Text = "Games"
-        '
-        'reactiontime
-        '
-        Me.reactiontime.Name = "reactiontime"
-        Me.reactiontime.Size = New System.Drawing.Size(226, 26)
-        Me.reactiontime.Text = "Reaction Time"
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GamesToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.go_back, Me.GamesToolStripMenuItem, Me.SettingsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
@@ -149,51 +114,6 @@ Partial Class evade_a_missile_main
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(800, 42)
         Me.TableLayoutPanel2.TabIndex = 6
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(44, 0)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(91, 129)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 2
-        Me.PictureBox4.TabStop = False
-        Me.PictureBox4.Visible = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(43, 3)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(91, 129)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 4
-        Me.PictureBox6.TabStop = False
-        Me.PictureBox6.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.char1_basic
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 344)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(160, 106)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(37, 3)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(91, 129)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 3
-        Me.PictureBox5.TabStop = False
-        Me.PictureBox5.Visible = False
-        '
         'Panel3
         '
         Me.Panel3.Location = New System.Drawing.Point(160, 11)
@@ -213,17 +133,6 @@ Partial Class evade_a_missile_main
         Me.Panel2.Size = New System.Drawing.Size(160, 274)
         Me.Panel2.TabIndex = 2
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(42, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(91, 129)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        Me.PictureBox2.Visible = False
-        '
         'Panel5
         '
         Me.Panel5.Controls.Add(Me.PictureBox2)
@@ -233,17 +142,6 @@ Partial Class evade_a_missile_main
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(160, 274)
         Me.Panel5.TabIndex = 5
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(39, 0)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(91, 129)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 1
-        Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
         '
         'Panel6
         '
@@ -305,6 +203,126 @@ Partial Class evade_a_missile_main
         Me.Panel4.Size = New System.Drawing.Size(160, 274)
         Me.Panel4.TabIndex = 4
         '
+        'go_back
+        '
+        Me.go_back.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.home_icon
+        Me.go_back.Name = "go_back"
+        Me.go_back.Size = New System.Drawing.Size(97, 24)
+        Me.go_back.Text = "Go back"
+        '
+        'GamesToolStripMenuItem
+        '
+        Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.reactiontime, Me.mathchallenge})
+        Me.GamesToolStripMenuItem.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.game_icon
+        Me.GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
+        Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(88, 24)
+        Me.GamesToolStripMenuItem.Text = "Games"
+        '
+        'rockpaperscissors
+        '
+        Me.rockpaperscissors.Name = "rockpaperscissors"
+        Me.rockpaperscissors.Size = New System.Drawing.Size(226, 26)
+        Me.rockpaperscissors.Text = "Rock, Paper, Scissors"
+        '
+        'fallingblock
+        '
+        Me.fallingblock.Name = "fallingblock"
+        Me.fallingblock.Size = New System.Drawing.Size(226, 26)
+        Me.fallingblock.Text = "Evade the Missle"
+        '
+        'whackamole
+        '
+        Me.whackamole.Name = "whackamole"
+        Me.whackamole.Size = New System.Drawing.Size(226, 26)
+        Me.whackamole.Text = "Whack a Mole"
+        '
+        'reactiontime
+        '
+        Me.reactiontime.Name = "reactiontime"
+        Me.reactiontime.Size = New System.Drawing.Size(226, 26)
+        Me.reactiontime.Text = "Reaction Time"
+        '
+        'mathchallenge
+        '
+        Me.mathchallenge.Name = "mathchallenge"
+        Me.mathchallenge.Size = New System.Drawing.Size(226, 26)
+        Me.mathchallenge.Text = "Math Challenge"
+        '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.SettingsToolStripMenuItem.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.settings_icon
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(39, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(91, 129)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(42, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(91, 129)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(37, 3)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(91, 129)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 3
+        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.char1_basic
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 344)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(160, 106)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(43, 3)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(91, 129)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 4
+        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(44, 0)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(91, 129)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
         'evade_a_missile_main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -320,18 +338,18 @@ Partial Class evade_a_missile_main
         Me.MenuStrip1.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -360,4 +378,6 @@ Partial Class evade_a_missile_main
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Panel4 As Panel
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents go_back As ToolStripMenuItem
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
 End Class

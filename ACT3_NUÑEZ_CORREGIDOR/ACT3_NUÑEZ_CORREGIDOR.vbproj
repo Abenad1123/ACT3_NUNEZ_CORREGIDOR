@@ -79,16 +79,16 @@
     <Compile Include="Forms\Game forms\game setting forms\whack_a_mole_settings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Game forms\mathchallenge.Designer.vb">
-      <DependentUpon>mathchallenge.vb</DependentUpon>
+    <Compile Include="Forms\Game forms\mathchallenge_main.Designer.vb">
+      <DependentUpon>mathchallenge_main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Game forms\mathchallenge.vb">
+    <Compile Include="Forms\Game forms\mathchallenge_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Game forms\reactiontime.Designer.vb">
-      <DependentUpon>reactiontime.vb</DependentUpon>
+    <Compile Include="Forms\Game forms\reactiontime_main.Designer.vb">
+      <DependentUpon>reactiontime_main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Game forms\reactiontime.vb">
+    <Compile Include="Forms\Game forms\reactiontime_main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Functions\game_variables.vb" />
@@ -221,11 +221,11 @@
     <EmbeddedResource Include="Forms\Game forms\game_main_menu.resx">
       <DependentUpon>game_main_menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\mathchallenge.resx">
-      <DependentUpon>mathchallenge.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Game forms\mathchallenge_main.resx">
+      <DependentUpon>mathchallenge_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\reactiontime.resx">
-      <DependentUpon>reactiontime.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Game forms\reactiontime_main.resx">
+      <DependentUpon>reactiontime_main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\main_menu.resx">
       <DependentUpon>main_menu.vb</DependentUpon>
@@ -464,6 +464,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\game\whackamole_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\game\game_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\game\home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\game\settings_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

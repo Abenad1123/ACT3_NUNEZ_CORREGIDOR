@@ -22,7 +22,7 @@
     End Sub
 
     Private Sub library_btn_Click(sender As Object, e As EventArgs) Handles library_btn.Click
-
+        OpenForm(Of library_welcome)(Me)
     End Sub
 
     Private Sub acad_btn_Click(sender As Object, e As EventArgs) Handles acad_btn.Click
@@ -61,6 +61,6 @@
     ' ---------------- END OF INITIAL DATA & FUNCTIONS ----------------
 
     Private Sub continue_btn_Click(sender As Object, e As EventArgs) Handles continue_btn.Click
-        OpenForm(Of game_main_menu)(Me)
+        OpenForm(Of whack_a_mole_main)(Me)
     End Sub
 End Class
