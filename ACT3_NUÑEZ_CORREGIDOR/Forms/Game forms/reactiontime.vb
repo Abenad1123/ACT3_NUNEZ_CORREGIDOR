@@ -11,7 +11,7 @@
         OpenForm(Of whack_a_mole_main)(Me)
     End Sub
 
-    Private Sub Game4_Load(sender As Object, e As EventArgs) Handles reactiontime.Click
+    Private Sub Game4_Load(sender As Object, e As EventArgs) Handles self.Click
         OpenForm(Of reactiontime)(Me)
     End Sub
 

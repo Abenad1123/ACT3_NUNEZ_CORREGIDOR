@@ -27,7 +27,7 @@ Partial Class reactiontime
         Me.rockpaperscissors = New System.Windows.Forms.ToolStripMenuItem()
         Me.fallingblock = New System.Windows.Forms.ToolStripMenuItem()
         Me.whackamole = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.self = New System.Windows.Forms.ToolStripMenuItem()
         Me.mathchallenge = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -44,7 +44,7 @@ Partial Class reactiontime
         '
         'GamesToolStripMenuItem
         '
-        Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.ToolStripMenuItem1, Me.mathchallenge})
+        Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.self, Me.mathchallenge})
         Me.GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
         Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
         Me.GamesToolStripMenuItem.Text = "Games"
@@ -67,11 +67,11 @@ Partial Class reactiontime
         Me.whackamole.Size = New System.Drawing.Size(226, 26)
         Me.whackamole.Text = "Whack a Mole"
         '
-        'ToolStripMenuItem1
+        'self
         '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(226, 26)
-        Me.ToolStripMenuItem1.Text = "Reaction Time"
+        Me.self.Name = "self"
+        Me.self.Size = New System.Drawing.Size(226, 26)
+        Me.self.Text = "Reaction Time"
         '
         'mathchallenge
         '
@@ -99,6 +99,6 @@ Partial Class reactiontime
     Friend WithEvents rockpaperscissors As ToolStripMenuItem
     Friend WithEvents fallingblock As ToolStripMenuItem
     Friend WithEvents whackamole As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents self As ToolStripMenuItem
     Friend WithEvents mathchallenge As ToolStripMenuItem
 End Class

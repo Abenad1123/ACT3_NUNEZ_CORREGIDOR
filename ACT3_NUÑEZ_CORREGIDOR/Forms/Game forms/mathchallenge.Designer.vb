@@ -28,7 +28,7 @@ Partial Class mathchallenge
         Me.fallingblock = New System.Windows.Forms.ToolStripMenuItem()
         Me.whackamole = New System.Windows.Forms.ToolStripMenuItem()
         Me.reactiontime = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.self = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +44,7 @@ Partial Class mathchallenge
         '
         'GamesToolStripMenuItem
         '
-        Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.reactiontime, Me.ToolStripMenuItem1})
+        Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.reactiontime, Me.self})
         Me.GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
         Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
         Me.GamesToolStripMenuItem.Text = "Games"
@@ -73,11 +73,11 @@ Partial Class mathchallenge
         Me.reactiontime.Size = New System.Drawing.Size(226, 26)
         Me.reactiontime.Text = "Reaction Time"
         '
-        'ToolStripMenuItem1
+        'self
         '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(226, 26)
-        Me.ToolStripMenuItem1.Text = "Math Challenge"
+        Me.self.Name = "self"
+        Me.self.Size = New System.Drawing.Size(226, 26)
+        Me.self.Text = "Math Challenge"
         '
         'mathchallenge
         '
@@ -100,5 +100,5 @@ Partial Class mathchallenge
     Friend WithEvents fallingblock As ToolStripMenuItem
     Friend WithEvents whackamole As ToolStripMenuItem
     Friend WithEvents reactiontime As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents self As ToolStripMenuItem
 End Class

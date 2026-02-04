@@ -15,7 +15,7 @@
         OpenForm(Of reactiontime)(Me)
     End Sub
 
-    Private Sub Game5_Load(sender As Object, e As EventArgs) Handles mathchallenge.Click
+    Private Sub Game5_Load(sender As Object, e As EventArgs) Handles self.Click
         OpenForm(Of mathchallenge)(Me)
     End Sub
 End Class
