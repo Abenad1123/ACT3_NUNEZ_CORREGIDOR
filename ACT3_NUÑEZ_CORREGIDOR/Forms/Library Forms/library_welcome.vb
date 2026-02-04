@@ -60,8 +60,6 @@
 
     ' ---------------- END OF INITIAL DATA & FUNCTIONS ----------------
     Private Sub continue_btn_Click(sender As Object, e As EventArgs) Handles continue_btn.Click
-        Dim cont As New library_main()
-        cont.Show()
-        Me.Close()
+        OpenForm(Of library_main)(Me)
     End Sub
 End Class

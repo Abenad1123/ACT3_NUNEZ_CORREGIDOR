@@ -29,6 +29,7 @@ Partial Class library_main
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(library_main))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.menu_btn = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.enroll_btn = New System.Windows.Forms.PictureBox()
         Me.store_btn = New System.Windows.Forms.PictureBox()
@@ -64,8 +65,8 @@ Partial Class library_main
         Me.games_btn = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
-        Me.menu_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.store_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +81,6 @@ Partial Class library_main
         Me.TableLayoutPanel5.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -116,6 +116,18 @@ Partial Class library_main
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.50516!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(942, 493)
         Me.TableLayoutPanel1.TabIndex = 5
+        '
+        'menu_btn
+        '
+        Me.menu_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.menu_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.menu_btn
+        Me.menu_btn.Location = New System.Drawing.Point(794, 52)
+        Me.menu_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.menu_btn.Name = "menu_btn"
+        Me.menu_btn.Size = New System.Drawing.Size(117, 42)
+        Me.menu_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.menu_btn.TabIndex = 18
+        Me.menu_btn.TabStop = False
         '
         'PictureBox1
         '
@@ -177,7 +189,7 @@ Partial Class library_main
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.423346!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.506186!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.14954!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.DataGridView1, 4, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 4, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Button2, 4, 2)
@@ -229,7 +241,7 @@ Partial Class library_main
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 40
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(513, 202)
+        Me.DataGridView1.Size = New System.Drawing.Size(511, 202)
         Me.DataGridView1.TabIndex = 1
         '
         'Column6
@@ -294,7 +306,7 @@ Partial Class library_main
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.04534!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.70529!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Button3, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.TextBox1, 2, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Button4, 3, 0)
@@ -304,7 +316,7 @@ Partial Class library_main
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(521, 12)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(519, 12)
         Me.TableLayoutPanel3.TabIndex = 2
         '
         'Button3
@@ -328,7 +340,7 @@ Partial Class library_main
         Me.TextBox1.Location = New System.Drawing.Point(47, 0)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(278, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(275, 30)
         Me.TextBox1.TabIndex = 14
         '
         'Button4
@@ -337,7 +349,7 @@ Partial Class library_main
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ImageIndex = 0
-        Me.Button4.Location = New System.Drawing.Point(330, 0)
+        Me.Button4.Location = New System.Drawing.Point(327, 0)
         Me.Button4.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(32, 12)
@@ -492,7 +504,7 @@ Partial Class library_main
         Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
         Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.hamburger_menu.Name = "hamburger_menu"
-        Me.hamburger_menu.Size = New System.Drawing.Size(300, 493)
+        Me.hamburger_menu.Size = New System.Drawing.Size(0, 493)
         Me.hamburger_menu.TabIndex = 6
         Me.hamburger_menu.Visible = False
         '
@@ -520,18 +532,18 @@ Partial Class library_main
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(300, 493)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(0, 493)
         Me.TableLayoutPanel5.TabIndex = 3
         '
         'PictureBox4
         '
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
-        Me.PictureBox4.Location = New System.Drawing.Point(30, 24)
+        Me.PictureBox4.Location = New System.Drawing.Point(0, 24)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(240, 83)
+        Me.PictureBox4.Size = New System.Drawing.Size(1, 83)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 2
         Me.PictureBox4.TabStop = False
@@ -542,11 +554,11 @@ Partial Class library_main
         Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.acad_btn.Location = New System.Drawing.Point(30, 121)
+        Me.acad_btn.Location = New System.Drawing.Point(0, 121)
         Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(240, 39)
+        Me.acad_btn.Size = New System.Drawing.Size(1, 39)
         Me.acad_btn.TabIndex = 0
         Me.acad_btn.Text = "Academic Calendar"
         Me.acad_btn.UseVisualStyleBackColor = False
@@ -557,11 +569,11 @@ Partial Class library_main
         Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.about_btn.Location = New System.Drawing.Point(30, 160)
+        Me.about_btn.Location = New System.Drawing.Point(0, 160)
         Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(240, 39)
+        Me.about_btn.Size = New System.Drawing.Size(1, 39)
         Me.about_btn.TabIndex = 3
         Me.about_btn.Text = "About DLSZ"
         Me.about_btn.UseVisualStyleBackColor = False
@@ -571,11 +583,11 @@ Partial Class library_main
         Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.games_btn.Location = New System.Drawing.Point(30, 199)
+        Me.games_btn.Location = New System.Drawing.Point(0, 199)
         Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.games_btn.Name = "games_btn"
-        Me.games_btn.Size = New System.Drawing.Size(240, 39)
+        Me.games_btn.Size = New System.Drawing.Size(1, 39)
         Me.games_btn.TabIndex = 4
         Me.games_btn.Text = "Games"
         Me.games_btn.UseVisualStyleBackColor = True
@@ -584,11 +596,11 @@ Partial Class library_main
         '
         Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
-        Me.close_hamburger_btn.Location = New System.Drawing.Point(270, 0)
+        Me.close_hamburger_btn.Location = New System.Drawing.Point(0, 0)
         Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
         Me.close_hamburger_btn.Name = "close_hamburger_btn"
-        Me.close_hamburger_btn.Size = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.Size = New System.Drawing.Size(1, 24)
         Me.close_hamburger_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.close_hamburger_btn.TabIndex = 5
         Me.close_hamburger_btn.TabStop = False
@@ -596,18 +608,6 @@ Partial Class library_main
         'hambuger_menu_timer
         '
         Me.hambuger_menu_timer.Interval = 15
-        '
-        'menu_btn
-        '
-        Me.menu_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.menu_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.menu_btn
-        Me.menu_btn.Location = New System.Drawing.Point(794, 52)
-        Me.menu_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.menu_btn.Name = "menu_btn"
-        Me.menu_btn.Size = New System.Drawing.Size(117, 42)
-        Me.menu_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.menu_btn.TabIndex = 18
-        Me.menu_btn.TabStop = False
         '
         'library_main
         '
@@ -621,6 +621,7 @@ Partial Class library_main
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.store_btn, System.ComponentModel.ISupportInitialize).EndInit()
@@ -637,7 +638,6 @@ Partial Class library_main
         Me.TableLayoutPanel5.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

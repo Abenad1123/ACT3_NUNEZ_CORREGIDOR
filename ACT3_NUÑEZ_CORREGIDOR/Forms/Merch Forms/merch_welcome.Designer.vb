@@ -22,51 +22,61 @@ Partial Class merch_welcome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(merch_welcome))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.acad_btn = New System.Windows.Forms.PictureBox()
-        Me.about_btn = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.continue_btn = New System.Windows.Forms.PictureBox()
         Me.enroll_btn = New System.Windows.Forms.PictureBox()
         Me.go_back_btn = New System.Windows.Forms.PictureBox()
         Me.library_btn = New System.Windows.Forms.PictureBox()
+        Me.menu_btn = New System.Windows.Forms.PictureBox()
+        Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
+        Me.hamburger_menu = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.acad_btn = New System.Windows.Forms.Button()
+        Me.about_btn = New System.Windows.Forms.Button()
+        Me.games_btn = New System.Windows.Forms.Button()
+        Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.continue_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.hamburger_menu.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.TableLayoutPanel1.ColumnCount = 13
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.102564!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.64103!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.692307!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.28205!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.025641!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.28205!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.025641!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.28205!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.025641!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.28205!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.025641!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.28205!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.051282!))
-        Me.TableLayoutPanel1.Controls.Add(Me.acad_btn, 9, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.about_btn, 11, 2)
+        Me.TableLayoutPanel1.ColumnCount = 11
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.678362!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.23977!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.771929!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.86549!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.16959!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.86549!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.16959!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.86549!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.16959!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.86549!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.339181!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.enroll_btn, 3, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.go_back_btn, 5, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.library_btn, 7, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.menu_btn, 9, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -75,42 +85,18 @@ Partial Class merch_welcome
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.185567!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.30928!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.50516!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1902, 1033)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(942, 493)
         Me.TableLayoutPanel1.TabIndex = 3
-        '
-        'acad_btn
-        '
-        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.acad_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.acad_calendar_btn
-        Me.acad_btn.Location = New System.Drawing.Point(1413, 85)
-        Me.acad_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(208, 75)
-        Me.acad_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.acad_btn.TabIndex = 1
-        Me.acad_btn.TabStop = False
-        '
-        'about_btn
-        '
-        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.about_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.about_btn
-        Me.about_btn.Location = New System.Drawing.Point(1646, 85)
-        Me.about_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(208, 75)
-        Me.about_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.about_btn.TabIndex = 2
-        Me.about_btn.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.De_La_Salle_Zobel
-        Me.PictureBox1.Location = New System.Drawing.Point(83, 25)
+        Me.PictureBox1.Location = New System.Drawing.Point(49, 25)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.TableLayoutPanel1.SetRowSpan(Me.PictureBox1, 2)
-        Me.PictureBox1.Size = New System.Drawing.Size(477, 156)
+        Me.PictureBox1.Size = New System.Drawing.Size(265, 67)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -120,29 +106,29 @@ Partial Class merch_welcome
         Me.TableLayoutPanel2.BackgroundImage = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.store_start
         Me.TableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel1.SetColumnSpan(Me.TableLayoutPanel2, 13)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.TableLayoutPanel2, 11)
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.11041!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.77708!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.11251!))
         Me.TableLayoutPanel2.Controls.Add(Me.continue_btn, 1, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 186)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 97)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 3
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.46989!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.681228!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.84888!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1902, 847)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(942, 396)
         Me.TableLayoutPanel2.TabIndex = 10
         '
         'continue_btn
         '
         Me.continue_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.continue_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.cont_btn
-        Me.continue_btn.Location = New System.Drawing.Point(861, 565)
+        Me.continue_btn.Location = New System.Drawing.Point(427, 266)
         Me.continue_btn.Name = "continue_btn"
-        Me.continue_btn.Size = New System.Drawing.Size(218, 76)
+        Me.continue_btn.Size = New System.Drawing.Size(104, 32)
         Me.continue_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.continue_btn.TabIndex = 1
         Me.continue_btn.TabStop = False
@@ -151,21 +137,22 @@ Partial Class merch_welcome
         '
         Me.enroll_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.enroll_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.enroll_btn
-        Me.enroll_btn.Location = New System.Drawing.Point(714, 85)
+        Me.enroll_btn.Location = New System.Drawing.Point(404, 52)
         Me.enroll_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.enroll_btn.Name = "enroll_btn"
-        Me.enroll_btn.Size = New System.Drawing.Size(208, 75)
+        Me.enroll_btn.Size = New System.Drawing.Size(115, 42)
         Me.enroll_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.enroll_btn.TabIndex = 9
         Me.enroll_btn.TabStop = False
         '
         'go_back_btn
         '
+        Me.go_back_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.go_back_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.go_back_btn
-        Me.go_back_btn.Location = New System.Drawing.Point(947, 85)
+        Me.go_back_btn.Location = New System.Drawing.Point(536, 52)
         Me.go_back_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.go_back_btn.Name = "go_back_btn"
-        Me.go_back_btn.Size = New System.Drawing.Size(208, 75)
+        Me.go_back_btn.Size = New System.Drawing.Size(115, 42)
         Me.go_back_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.go_back_btn.TabIndex = 4
         Me.go_back_btn.TabStop = False
@@ -174,44 +161,180 @@ Partial Class merch_welcome
         '
         Me.library_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.library_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.library_btn
-        Me.library_btn.Location = New System.Drawing.Point(1180, 85)
+        Me.library_btn.Location = New System.Drawing.Point(668, 52)
         Me.library_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.library_btn.Name = "library_btn"
-        Me.library_btn.Size = New System.Drawing.Size(208, 75)
+        Me.library_btn.Size = New System.Drawing.Size(115, 42)
         Me.library_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.library_btn.TabIndex = 15
         Me.library_btn.TabStop = False
         '
-        'Form8
+        'menu_btn
+        '
+        Me.menu_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.menu_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.menu_btn
+        Me.menu_btn.Location = New System.Drawing.Point(800, 52)
+        Me.menu_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.menu_btn.Name = "menu_btn"
+        Me.menu_btn.Size = New System.Drawing.Size(115, 42)
+        Me.menu_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.menu_btn.TabIndex = 16
+        Me.menu_btn.TabStop = False
+        '
+        'hambuger_menu_timer
+        '
+        Me.hambuger_menu_timer.Interval = 15
+        '
+        'hamburger_menu
+        '
+        Me.hamburger_menu.BackColor = System.Drawing.Color.DarkGray
+        Me.hamburger_menu.Controls.Add(Me.TableLayoutPanel3)
+        Me.hamburger_menu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
+        Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
+        Me.hamburger_menu.Name = "hamburger_menu"
+        Me.hamburger_menu.Size = New System.Drawing.Size(300, 493)
+        Me.hamburger_menu.TabIndex = 4
+        Me.hamburger_menu.Visible = False
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.ColumnCount = 3
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.PictureBox4, 1, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.acad_btn, 1, 3)
+        Me.TableLayoutPanel3.Controls.Add(Me.about_btn, 1, 4)
+        Me.TableLayoutPanel3.Controls.Add(Me.games_btn, 1, 5)
+        Me.TableLayoutPanel3.Controls.Add(Me.close_hamburger_btn, 2, 0)
+        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 9
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(300, 493)
+        Me.TableLayoutPanel3.TabIndex = 3
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
+        Me.PictureBox4.Location = New System.Drawing.Point(30, 24)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(240, 83)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
+        '
+        'acad_btn
+        '
+        Me.acad_btn.BackColor = System.Drawing.Color.Transparent
+        Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.acad_btn.Location = New System.Drawing.Point(30, 121)
+        Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.acad_btn.Name = "acad_btn"
+        Me.acad_btn.Size = New System.Drawing.Size(240, 39)
+        Me.acad_btn.TabIndex = 0
+        Me.acad_btn.Text = "Academic Calendar"
+        Me.acad_btn.UseVisualStyleBackColor = False
+        '
+        'about_btn
+        '
+        Me.about_btn.BackColor = System.Drawing.Color.Transparent
+        Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.about_btn.Location = New System.Drawing.Point(30, 160)
+        Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.about_btn.Name = "about_btn"
+        Me.about_btn.Size = New System.Drawing.Size(240, 39)
+        Me.about_btn.TabIndex = 3
+        Me.about_btn.Text = "About DLSZ"
+        Me.about_btn.UseVisualStyleBackColor = False
+        '
+        'games_btn
+        '
+        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.games_btn.Location = New System.Drawing.Point(30, 199)
+        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.games_btn.Name = "games_btn"
+        Me.games_btn.Size = New System.Drawing.Size(240, 39)
+        Me.games_btn.TabIndex = 4
+        Me.games_btn.Text = "Games"
+        Me.games_btn.UseVisualStyleBackColor = True
+        '
+        'close_hamburger_btn
+        '
+        Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
+        Me.close_hamburger_btn.Location = New System.Drawing.Point(284, 0)
+        Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
+        Me.close_hamburger_btn.Name = "close_hamburger_btn"
+        Me.close_hamburger_btn.Size = New System.Drawing.Size(1, 24)
+        Me.close_hamburger_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.close_hamburger_btn.TabIndex = 5
+        Me.close_hamburger_btn.TabStop = False
+        '
+        'merch_welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1902, 1033)
+        Me.ClientSize = New System.Drawing.Size(942, 493)
+        Me.Controls.Add(Me.hamburger_menu)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form8"
+        Me.Name = "merch_welcome"
         Me.Text = "De La Salle Santiago Zobel"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.acad_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.about_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.continue_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.go_back_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.library_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.hamburger_menu.ResumeLayout(False)
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents enroll_btn As PictureBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents acad_btn As PictureBox
     Friend WithEvents go_back_btn As PictureBox
-    Friend WithEvents about_btn As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents continue_btn As PictureBox
     Friend WithEvents library_btn As PictureBox
+    Public WithEvents hambuger_menu_timer As Timer
+    Friend WithEvents hamburger_menu As Panel
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents acad_btn As Button
+    Friend WithEvents about_btn As Button
+    Friend WithEvents games_btn As Button
+    Friend WithEvents close_hamburger_btn As PictureBox
+    Friend WithEvents menu_btn As PictureBox
 End Class
