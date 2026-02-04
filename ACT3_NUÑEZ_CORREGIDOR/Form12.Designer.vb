@@ -309,7 +309,7 @@ Partial Class Form12
 		Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.04534!))
 		Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.70529!))
 		Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-		Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36.0!))
+		Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
 		Me.TableLayoutPanel3.Controls.Add(Me.Button3, 1, 0)
 		Me.TableLayoutPanel3.Controls.Add(Me.TextBox1, 2, 0)
 		Me.TableLayoutPanel3.Controls.Add(Me.Button4, 3, 0)
@@ -343,7 +343,7 @@ Partial Class Form12
 		Me.TextBox1.Location = New System.Drawing.Point(81, 0)
 		Me.TextBox1.Margin = New System.Windows.Forms.Padding(0)
 		Me.TextBox1.Name = "TextBox1"
-		Me.TextBox1.Size = New System.Drawing.Size(621, 30)
+		Me.TextBox1.Size = New System.Drawing.Size(620, 30)
 		Me.TextBox1.TabIndex = 14
 		'
 		'Button4
@@ -352,7 +352,7 @@ Partial Class Form12
 		Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button4.ImageIndex = 0
-		Me.Button4.Location = New System.Drawing.Point(707, 0)
+		Me.Button4.Location = New System.Drawing.Point(706, 0)
 		Me.Button4.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
 		Me.Button4.Name = "Button4"
 		Me.Button4.Size = New System.Drawing.Size(32, 32)

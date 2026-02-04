@@ -174,6 +174,7 @@ Partial Class Form11
 		'
 		'continue_btn
 		'
+		Me.continue_btn.BackColor = System.Drawing.Color.Black
 		Me.continue_btn.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.continue_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.cont_btn
 		Me.continue_btn.Location = New System.Drawing.Point(855, 637)
