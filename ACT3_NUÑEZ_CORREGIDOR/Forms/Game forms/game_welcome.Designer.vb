@@ -31,6 +31,7 @@ Partial Class game_welcome
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.continue_btn = New System.Windows.Forms.PictureBox()
         Me.menu_btn = New System.Windows.Forms.PictureBox()
+        Me.library_btn = New System.Windows.Forms.PictureBox()
         Me.hamburger_menu = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -39,7 +40,6 @@ Partial Class game_welcome
         Me.go_back = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
-        Me.library_btn = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,11 +47,11 @@ Partial Class game_welcome
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.continue_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.hamburger_menu.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -170,6 +170,18 @@ Partial Class game_welcome
         Me.menu_btn.TabIndex = 18
         Me.menu_btn.TabStop = False
         '
+        'library_btn
+        '
+        Me.library_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.library_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.library_btn
+        Me.library_btn.Location = New System.Drawing.Point(661, 52)
+        Me.library_btn.MaximumSize = New System.Drawing.Size(236, 75)
+        Me.library_btn.Name = "library_btn"
+        Me.library_btn.Size = New System.Drawing.Size(117, 42)
+        Me.library_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.library_btn.TabIndex = 19
+        Me.library_btn.TabStop = False
+        '
         'hamburger_menu
         '
         Me.hamburger_menu.BackColor = System.Drawing.Color.DarkGray
@@ -283,18 +295,6 @@ Partial Class game_welcome
         '
         Me.hambuger_menu_timer.Interval = 15
         '
-        'library_btn
-        '
-        Me.library_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.library_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.library_btn
-        Me.library_btn.Location = New System.Drawing.Point(661, 52)
-        Me.library_btn.MaximumSize = New System.Drawing.Size(236, 75)
-        Me.library_btn.Name = "library_btn"
-        Me.library_btn.Size = New System.Drawing.Size(117, 42)
-        Me.library_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.library_btn.TabIndex = 19
-        Me.library_btn.TabStop = False
-        '
         'game_welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -313,11 +313,11 @@ Partial Class game_welcome
         Me.TableLayoutPanel2.ResumeLayout(False)
         CType(Me.continue_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.menu_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.hamburger_menu.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.library_btn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

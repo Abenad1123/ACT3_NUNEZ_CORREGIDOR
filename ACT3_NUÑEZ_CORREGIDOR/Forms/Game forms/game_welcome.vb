@@ -61,6 +61,6 @@
     ' ---------------- END OF INITIAL DATA & FUNCTIONS ----------------
 
     Private Sub continue_btn_Click(sender As Object, e As EventArgs) Handles continue_btn.Click
-        OpenForm(Of whack_a_mole_main)(Me)
+        OpenForm(Of game_main_menu)(Me)
     End Sub
 End Class
