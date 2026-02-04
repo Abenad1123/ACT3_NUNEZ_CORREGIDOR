@@ -124,9 +124,6 @@
   <data name="acad_calendar_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\acad_calendar_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="abedadi (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abedadi (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="library_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\library_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,8 +157,8 @@
   <data name="basic_info_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\basic_info_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reload_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\reload_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="about_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\about_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="store_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\store_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,11 +169,14 @@
   <data name="enroll_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\enroll_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DLSZ-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\DLSZ-light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ACADEMIC-CALENDAR-AY2526_page-0001" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\ACADEMIC-CALENDAR-AY2526_page-0001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="about_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\about_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abedadi (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abedadi (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="store_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\store_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +187,9 @@
   <data name="store_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\store_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\close_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="about_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\about_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,11 +199,20 @@
   <data name="DLSZ-Home-De-La-Salle-Santiago-Zobel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\DLSZ-Home-De-La-Salle-Santiago-Zobel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="game bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="go_back_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\go_back_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reload_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\reload_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_icon_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\close_icon_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cont_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\cont_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +235,10 @@
   <data name="main_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\main_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="game bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_btn_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu_btn_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

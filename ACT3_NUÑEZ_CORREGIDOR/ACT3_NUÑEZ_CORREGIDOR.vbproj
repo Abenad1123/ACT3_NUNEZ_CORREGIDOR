@@ -73,100 +73,109 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Functions\game_variables.vb" />
+    <Compile Include="Forms\main_menu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Forms\main_menu.Designer.vb">
+      <DependentUpon>main_menu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.vb">
-      <DependentUpon>Form10.vb</DependentUpon>
+    <Compile Include="Forms\Merch Forms\merch_receipt.Designer.vb">
+      <DependentUpon>merch_receipt.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form10.vb">
+    <Compile Include="Forms\Merch Forms\merch_receipt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.vb">
-      <DependentUpon>Form11.vb</DependentUpon>
+    <Compile Include="Forms\Library Forms\library_welcome.Designer.vb">
+      <DependentUpon>library_welcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form11.vb">
+    <Compile Include="Forms\Library Forms\library_welcome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form12.Designer.vb">
-      <DependentUpon>Form12.vb</DependentUpon>
+    <Compile Include="Forms\Library Forms\library_main.Designer.vb">
+      <DependentUpon>library_main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form12.vb">
+    <Compile Include="Forms\Library Forms\library_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form13.Designer.vb">
-      <DependentUpon>Form13.vb</DependentUpon>
+    <Compile Include="Forms\Game forms\game_welcome.Designer.vb">
+      <DependentUpon>game_welcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form13.vb">
+    <Compile Include="Forms\Game forms\game_welcome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Forms\Enroll Forms\enroll_step1.Designer.vb">
+      <DependentUpon>enroll_step1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Forms\Enroll Forms\enroll_step1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="Forms\acad_calendar.Designer.vb">
+      <DependentUpon>acad_calendar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="Forms\acad_calendar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="Forms\about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="Forms\about.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.vb">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <Compile Include="Forms\Enroll Forms\enroll_step2.Designer.vb">
+      <DependentUpon>enroll_step2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form5.vb">
+    <Compile Include="Forms\Enroll Forms\enroll_step2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.vb">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <Compile Include="Forms\Enroll Forms\enroll_step3.Designer.vb">
+      <DependentUpon>enroll_step3.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form6.vb">
+    <Compile Include="Forms\Enroll Forms\enroll_step3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.vb">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <Compile Include="Forms\Enroll Forms\enroll_receipt.Designer.vb">
+      <DependentUpon>enroll_receipt.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form7.vb">
+    <Compile Include="Forms\Enroll Forms\enroll_receipt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.vb">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <Compile Include="Forms\Merch Forms\merch_welcome.Designer.vb">
+      <DependentUpon>merch_welcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form8.vb">
+    <Compile Include="Forms\Merch Forms\merch_welcome.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.vb">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <Compile Include="Forms\Merch Forms\merch_main.Designer.vb">
+      <DependentUpon>merch_main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form9.vb">
+    <Compile Include="Forms\Merch Forms\merch_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Functions.vb" />
-    <Compile Include="game forms\evade_a_missile_main.Designer.vb">
+    <Compile Include="Functions\Functions.vb" />
+    <Compile Include="Forms\Game forms\evade_a_missile_main.Designer.vb">
       <DependentUpon>evade_a_missile_main.vb</DependentUpon>
     </Compile>
-    <Compile Include="game forms\evade_a_missile_main.vb" />
-    <Compile Include="game forms\rock_paper_scissors_main.Designer.vb">
-      <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
-    </Compile>
-    <Compile Include="game forms\rock_paper_scissors_main.vb">
+    <Compile Include="Forms\Game forms\evade_a_missile_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="game forms\whack_a_mole_main.Designer.vb">
+    <Compile Include="Forms\Game forms\game_main_menu.Designer.vb">
+      <DependentUpon>game_main_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Game forms\game_main_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Game forms\rock_paper_scissors_main.Designer.vb">
+      <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Game forms\rock_paper_scissors_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Game forms\whack_a_mole_main.Designer.vb">
       <DependentUpon>whack_a_mole_main.vb</DependentUpon>
     </Compile>
-    <Compile Include="game forms\whack_a_mole_main.vb">
+    <Compile Include="Forms\Game forms\whack_a_mole_main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -185,55 +194,55 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Variables.vb" />
+    <Compile Include="Functions\Variables.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\main_menu.resx">
+      <DependentUpon>main_menu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Merch Forms\merch_receipt.resx">
+      <DependentUpon>merch_receipt.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form11.resx">
-      <DependentUpon>Form11.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Library Forms\library_welcome.resx">
+      <DependentUpon>library_welcome.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form12.resx">
-      <DependentUpon>Form12.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Library Forms\library_main.resx">
+      <DependentUpon>library_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Game forms\game_welcome.resx">
+      <DependentUpon>game_welcome.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Enroll Forms\enroll_step1.resx">
+      <DependentUpon>enroll_step1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\acad_calendar.resx">
+      <DependentUpon>acad_calendar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\about.resx">
+      <DependentUpon>about.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Enroll Forms\enroll_step2.resx">
+      <DependentUpon>enroll_step2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Enroll Forms\enroll_step3.resx">
+      <DependentUpon>enroll_step3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Enroll Forms\enroll_receipt.resx">
+      <DependentUpon>enroll_receipt.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Merch Forms\merch_welcome.resx">
+      <DependentUpon>merch_welcome.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Merch Forms\merch_main.resx">
+      <DependentUpon>merch_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="game forms\evade_a_missile_main.resx">
+    <EmbeddedResource Include="Forms\Game forms\evade_a_missile_main.resx">
       <DependentUpon>evade_a_missile_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="game forms\rock_paper_scissors_main.resx">
+    <EmbeddedResource Include="Forms\Game forms\rock_paper_scissors_main.resx">
       <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="game forms\whack_a_mole_main.resx">
+    <EmbeddedResource Include="Forms\Game forms\whack_a_mole_main.resx">
       <DependentUpon>whack_a_mole_main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -358,7 +367,22 @@
     <None Include="Resources\game bg.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="game forms\game setting forms\" />
+    <Folder Include="Forms\Game forms\game setting forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\DLSZ-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\close_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\close_icon_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\menu_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\menu_btn_hover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
