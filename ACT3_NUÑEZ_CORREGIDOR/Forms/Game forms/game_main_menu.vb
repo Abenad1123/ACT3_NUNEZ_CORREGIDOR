@@ -78,4 +78,8 @@
     Private Sub Game5_Load(sender As Object, e As EventArgs) Handles Button5.Click
         OpenForm(Of mathchallenge_main)(Me)
     End Sub
+
+    Private Sub special_class_Click(sender As Object, e As EventArgs) Handles special_class.Click
+        OpenForm(Of main_menu)(Me)
+    End Sub
 End Class

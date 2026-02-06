@@ -44,6 +44,7 @@ Partial Class game_main_menu
         Me.go_back = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
+        Me.special_class = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,25 +82,25 @@ Partial Class game_main_menu
         Me.TableLayoutPanel1.Controls.Add(Me.menu_btn, 9, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.library_btn, 7, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(300, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.185567!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.30928!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.50516!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(800, 450)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(500, 450)
         Me.TableLayoutPanel1.TabIndex = 7
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.De_La_Salle_Zobel
-        Me.PictureBox1.Location = New System.Drawing.Point(41, 25)
+        Me.PictureBox1.Location = New System.Drawing.Point(27, 25)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.TableLayoutPanel1.SetRowSpan(Me.PictureBox1, 2)
-        Me.PictureBox1.Size = New System.Drawing.Size(218, 60)
+        Me.PictureBox1.Size = New System.Drawing.Size(132, 60)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -108,10 +109,10 @@ Partial Class game_main_menu
         '
         Me.enroll_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.enroll_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.enroll_btn
-        Me.enroll_btn.Location = New System.Drawing.Point(335, 49)
+        Me.enroll_btn.Location = New System.Drawing.Point(209, 49)
         Me.enroll_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.enroll_btn.Name = "enroll_btn"
-        Me.enroll_btn.Size = New System.Drawing.Size(99, 38)
+        Me.enroll_btn.Size = New System.Drawing.Size(59, 38)
         Me.enroll_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.enroll_btn.TabIndex = 8
         Me.enroll_btn.TabStop = False
@@ -120,10 +121,10 @@ Partial Class game_main_menu
         '
         Me.store_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.store_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.store_btn
-        Me.store_btn.Location = New System.Drawing.Point(449, 49)
+        Me.store_btn.Location = New System.Drawing.Point(279, 49)
         Me.store_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.store_btn.Name = "store_btn"
-        Me.store_btn.Size = New System.Drawing.Size(99, 38)
+        Me.store_btn.Size = New System.Drawing.Size(59, 38)
         Me.store_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.store_btn.TabIndex = 13
         Me.store_btn.TabStop = False
@@ -153,17 +154,17 @@ Partial Class game_main_menu
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(800, 360)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(500, 360)
         Me.TableLayoutPanel2.TabIndex = 17
         '
         'Button1
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(283, 54)
+        Me.Button1.Location = New System.Drawing.Point(178, 54)
         Me.Button1.MaximumSize = New System.Drawing.Size(0, 80)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(234, 45)
+        Me.Button1.Size = New System.Drawing.Size(144, 45)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Rock paper scissors"
         Me.Button1.UseVisualStyleBackColor = True
@@ -172,10 +173,10 @@ Partial Class game_main_menu
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(283, 105)
+        Me.Button2.Location = New System.Drawing.Point(178, 105)
         Me.Button2.MaximumSize = New System.Drawing.Size(0, 80)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(234, 45)
+        Me.Button2.Size = New System.Drawing.Size(144, 45)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Evade a missile"
         Me.Button2.UseVisualStyleBackColor = True
@@ -184,10 +185,10 @@ Partial Class game_main_menu
         '
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(283, 156)
+        Me.Button3.Location = New System.Drawing.Point(178, 156)
         Me.Button3.MaximumSize = New System.Drawing.Size(0, 80)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(234, 45)
+        Me.Button3.Size = New System.Drawing.Size(144, 45)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Whack a mole"
         Me.Button3.UseVisualStyleBackColor = True
@@ -196,10 +197,10 @@ Partial Class game_main_menu
         '
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(283, 207)
+        Me.Button4.Location = New System.Drawing.Point(178, 207)
         Me.Button4.MaximumSize = New System.Drawing.Size(0, 80)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(234, 45)
+        Me.Button4.Size = New System.Drawing.Size(144, 45)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Reaction time"
         Me.Button4.UseVisualStyleBackColor = True
@@ -208,10 +209,10 @@ Partial Class game_main_menu
         '
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(283, 258)
+        Me.Button5.Location = New System.Drawing.Point(178, 258)
         Me.Button5.MaximumSize = New System.Drawing.Size(0, 80)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(234, 45)
+        Me.Button5.Size = New System.Drawing.Size(144, 45)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "Math challenge"
         Me.Button5.UseVisualStyleBackColor = True
@@ -220,10 +221,10 @@ Partial Class game_main_menu
         '
         Me.menu_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.menu_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.menu_btn
-        Me.menu_btn.Location = New System.Drawing.Point(677, 49)
+        Me.menu_btn.Location = New System.Drawing.Point(419, 49)
         Me.menu_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.menu_btn.Name = "menu_btn"
-        Me.menu_btn.Size = New System.Drawing.Size(99, 38)
+        Me.menu_btn.Size = New System.Drawing.Size(59, 38)
         Me.menu_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.menu_btn.TabIndex = 18
         Me.menu_btn.TabStop = False
@@ -232,10 +233,10 @@ Partial Class game_main_menu
         '
         Me.library_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.library_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.library_btn
-        Me.library_btn.Location = New System.Drawing.Point(563, 49)
+        Me.library_btn.Location = New System.Drawing.Point(349, 49)
         Me.library_btn.MaximumSize = New System.Drawing.Size(236, 75)
         Me.library_btn.Name = "library_btn"
-        Me.library_btn.Size = New System.Drawing.Size(99, 38)
+        Me.library_btn.Size = New System.Drawing.Size(59, 38)
         Me.library_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.library_btn.TabIndex = 19
         Me.library_btn.TabStop = False
@@ -248,7 +249,7 @@ Partial Class game_main_menu
         Me.hamburger_menu.Location = New System.Drawing.Point(0, 0)
         Me.hamburger_menu.Margin = New System.Windows.Forms.Padding(0)
         Me.hamburger_menu.Name = "hamburger_menu"
-        Me.hamburger_menu.Size = New System.Drawing.Size(0, 450)
+        Me.hamburger_menu.Size = New System.Drawing.Size(300, 450)
         Me.hamburger_menu.TabIndex = 8
         Me.hamburger_menu.Visible = False
         '
@@ -263,6 +264,7 @@ Partial Class game_main_menu
         Me.TableLayoutPanel3.Controls.Add(Me.about_btn, 1, 4)
         Me.TableLayoutPanel3.Controls.Add(Me.go_back, 1, 5)
         Me.TableLayoutPanel3.Controls.Add(Me.close_hamburger_btn, 2, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.special_class, 1, 6)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
@@ -276,18 +278,18 @@ Partial Class game_main_menu
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(0, 450)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(300, 450)
         Me.TableLayoutPanel3.TabIndex = 3
         '
         'PictureBox4
         '
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox4.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.DLSZ_light
-        Me.PictureBox4.Location = New System.Drawing.Point(0, 22)
+        Me.PictureBox4.Location = New System.Drawing.Point(30, 22)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(0)
         Me.PictureBox4.MaximumSize = New System.Drawing.Size(0, 120)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(1, 76)
+        Me.PictureBox4.Size = New System.Drawing.Size(240, 76)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 2
         Me.PictureBox4.TabStop = False
@@ -298,11 +300,11 @@ Partial Class game_main_menu
         Me.acad_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.acad_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.acad_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.acad_btn.Location = New System.Drawing.Point(0, 111)
+        Me.acad_btn.Location = New System.Drawing.Point(30, 111)
         Me.acad_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.acad_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.acad_btn.Name = "acad_btn"
-        Me.acad_btn.Size = New System.Drawing.Size(1, 36)
+        Me.acad_btn.Size = New System.Drawing.Size(240, 36)
         Me.acad_btn.TabIndex = 0
         Me.acad_btn.Text = "Academic Calendar"
         Me.acad_btn.UseVisualStyleBackColor = False
@@ -313,11 +315,11 @@ Partial Class game_main_menu
         Me.about_btn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.about_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.about_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.about_btn.Location = New System.Drawing.Point(0, 147)
+        Me.about_btn.Location = New System.Drawing.Point(30, 147)
         Me.about_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.about_btn.MaximumSize = New System.Drawing.Size(0, 60)
         Me.about_btn.Name = "about_btn"
-        Me.about_btn.Size = New System.Drawing.Size(1, 36)
+        Me.about_btn.Size = New System.Drawing.Size(240, 36)
         Me.about_btn.TabIndex = 3
         Me.about_btn.Text = "About DLSZ"
         Me.about_btn.UseVisualStyleBackColor = False
@@ -327,11 +329,11 @@ Partial Class game_main_menu
         Me.go_back.Dock = System.Windows.Forms.DockStyle.Fill
         Me.go_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.go_back.ForeColor = System.Drawing.SystemColors.Control
-        Me.go_back.Location = New System.Drawing.Point(0, 183)
+        Me.go_back.Location = New System.Drawing.Point(30, 183)
         Me.go_back.Margin = New System.Windows.Forms.Padding(0)
         Me.go_back.MaximumSize = New System.Drawing.Size(0, 60)
         Me.go_back.Name = "go_back"
-        Me.go_back.Size = New System.Drawing.Size(1, 36)
+        Me.go_back.Size = New System.Drawing.Size(240, 36)
         Me.go_back.TabIndex = 4
         Me.go_back.Text = "Go back"
         Me.go_back.UseVisualStyleBackColor = True
@@ -340,7 +342,7 @@ Partial Class game_main_menu
         '
         Me.close_hamburger_btn.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.close_hamburger_btn.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.close_icon_white
-        Me.close_hamburger_btn.Location = New System.Drawing.Point(0, 0)
+        Me.close_hamburger_btn.Location = New System.Drawing.Point(284, 0)
         Me.close_hamburger_btn.Margin = New System.Windows.Forms.Padding(0)
         Me.close_hamburger_btn.MaximumSize = New System.Drawing.Size(30, 24)
         Me.close_hamburger_btn.Name = "close_hamburger_btn"
@@ -352,6 +354,20 @@ Partial Class game_main_menu
         'hambuger_menu_timer
         '
         Me.hambuger_menu_timer.Interval = 15
+        '
+        'special_class
+        '
+        Me.special_class.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.special_class.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.special_class.ForeColor = System.Drawing.SystemColors.Control
+        Me.special_class.Location = New System.Drawing.Point(30, 219)
+        Me.special_class.Margin = New System.Windows.Forms.Padding(0)
+        Me.special_class.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.special_class.Name = "special_class"
+        Me.special_class.Size = New System.Drawing.Size(240, 36)
+        Me.special_class.TabIndex = 6
+        Me.special_class.Text = "Speical Classes"
+        Me.special_class.UseVisualStyleBackColor = True
         '
         'game_main_menu
         '
@@ -399,4 +415,5 @@ Partial Class game_main_menu
     Friend WithEvents go_back As Button
     Friend WithEvents close_hamburger_btn As PictureBox
     Public WithEvents hambuger_menu_timer As Timer
+    Friend WithEvents special_class As Button
 End Class
