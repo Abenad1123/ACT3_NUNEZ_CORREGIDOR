@@ -35,7 +35,7 @@
 
             Case 0 ' START
                 Label1.Text = "Click any answer button to start"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\12.png")
+                PictureBox1.Image = My.Resources._12
                 Button1.Text = "Start"
                 Button2.Text = "Start"
                 Button3.Text = "Start"
@@ -43,7 +43,7 @@
 
             Case 1
                 Label1.Text = "What is 8 × 7?"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\13.png")
+                PictureBox1.Image = My.Resources._13
                 Button1.Text = "54"
                 Button2.Text = "56"
                 Button3.Text = "64"
@@ -51,7 +51,7 @@
 
             Case 2
                 Label1.Text = "Solve: 3² + 4²"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\14.png")
+                PictureBox1.Image = My.Resources._14
                 Button1.Text = "25"
                 Button2.Text = "14"
                 Button3.Text = "13"
@@ -59,7 +59,7 @@
 
             Case 3
                 Label1.Text = "What is √144?"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\15.png")
+                PictureBox1.Image = My.Resources._15
                 Button1.Text = "10"
                 Button2.Text = "11"
                 Button3.Text = "12"
@@ -67,7 +67,7 @@
 
             Case 4
                 Label1.Text = "Solve: 5x = 45"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\16.png")
+                PictureBox1.Image = My.Resources._16
                 Button1.Text = "7"
                 Button2.Text = "8"
                 Button3.Text = "9"
@@ -75,7 +75,7 @@
 
             Case 5
                 Label1.Text = "What is 15% of 200?"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\17.png")
+                PictureBox1.Image = My.Resources._17
                 Button1.Text = "20"
                 Button2.Text = "25"
                 Button3.Text = "30"
@@ -83,26 +83,21 @@
 
             Case 6
                 Label1.Text = "Who created the Cartesian plane?"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\18.png")
+                PictureBox1.Image = My.Resources._18
                 Button1.Text = "Isaac Newton"
                 Button2.Text = "René Descartes"
                 Button3.Text = "Maracris Lappay"
                 Button4.Text = "Albert Einstein"
-
-
-            Case 7
             Case 7
                 Label1.Text = "Solve using PEMDAS: 8 + 12 ÷ 3 × (4 − 2)²"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\19.png")
+                PictureBox1.Image = My.Resources._19
                 Button1.Text = "16"
                 Button2.Text = "20"
-                Button3.Text = "24"   ' ✅ correct
+                Button3.Text = "24"
                 Button4.Text = "32"
-
-
             Case 8 ' FINISH
                 Label1.Text = "Congratulations! You finished!"
-                PictureBox1.Image = Image.FromFile("C:\Users\Cedric Hanz D. Nunez\Downloads\abedadi\20.png")
+                PictureBox1.Image = My.Resources._20
                 Button1.Text = "Restart"
                 Button2.Text = "Restart"
                 Button3.Text = "Restart"
@@ -140,10 +135,7 @@
         End If
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-    End Sub
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-    End Sub
 
+    End Sub
 End Class

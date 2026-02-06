@@ -63,7 +63,7 @@ Partial Class whack_a_mole_settings
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 2, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 0, 6)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 28)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 30)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 14
@@ -81,7 +81,7 @@ Partial Class whack_a_mole_settings
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.142857!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(800, 422)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(800, 420)
         Me.TableLayoutPanel1.TabIndex = 17
         '
         'Label2
@@ -89,7 +89,7 @@ Partial Class whack_a_mole_settings
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(54, 125)
+        Me.Label2.Location = New System.Drawing.Point(54, 123)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(103, 20)
         Me.Label2.TabIndex = 3
@@ -99,14 +99,14 @@ Partial Class whack_a_mole_settings
         'TextBox1
         '
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.Location = New System.Drawing.Point(163, 123)
+        Me.TextBox1.Location = New System.Drawing.Point(163, 121)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(154, 22)
         Me.TextBox1.TabIndex = 2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(323, 123)
+        Me.Button2.Location = New System.Drawing.Point(323, 121)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 23)
         Me.Button2.TabIndex = 4
@@ -118,7 +118,7 @@ Partial Class whack_a_mole_settings
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(21, 65)
+        Me.Label1.Location = New System.Drawing.Point(21, 63)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(136, 20)
         Me.Label1.TabIndex = 0
@@ -126,7 +126,7 @@ Partial Class whack_a_mole_settings
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(163, 63)
+        Me.Button1.Location = New System.Drawing.Point(163, 61)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -141,7 +141,7 @@ Partial Class whack_a_mole_settings
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(163, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(474, 47)
+        Me.Label3.Size = New System.Drawing.Size(474, 46)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "SETTINGS"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -151,14 +151,14 @@ Partial Class whack_a_mole_settings
         Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Easy", "Normal", "Meduim", "Hard", "Extreme"})
-        Me.ComboBox1.Location = New System.Drawing.Point(163, 183)
+        Me.ComboBox1.Location = New System.Drawing.Point(163, 181)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(154, 24)
         Me.ComboBox1.TabIndex = 7
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(323, 183)
+        Me.Button3.Location = New System.Drawing.Point(323, 181)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(96, 23)
         Me.Button3.TabIndex = 8
@@ -170,7 +170,7 @@ Partial Class whack_a_mole_settings
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(82, 185)
+        Me.Label4.Location = New System.Drawing.Point(82, 183)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(75, 20)
         Me.Label4.TabIndex = 9
@@ -183,7 +183,7 @@ Partial Class whack_a_mole_settings
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GamesToolStripMenuItem, Me.go_back})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
         Me.MenuStrip1.TabIndex = 16
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -191,7 +191,7 @@ Partial Class whack_a_mole_settings
         '
         Me.GamesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.rockpaperscissors, Me.fallingblock, Me.whackamole, Me.reactiontime, Me.mathchallenge})
         Me.GamesToolStripMenuItem.Name = "GamesToolStripMenuItem"
-        Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
+        Me.GamesToolStripMenuItem.Size = New System.Drawing.Size(68, 26)
         Me.GamesToolStripMenuItem.Text = "Games"
         '
         'rockpaperscissors
@@ -228,7 +228,7 @@ Partial Class whack_a_mole_settings
         '
         Me.go_back.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.go_back.Name = "go_back"
-        Me.go_back.Size = New System.Drawing.Size(77, 24)
+        Me.go_back.Size = New System.Drawing.Size(77, 26)
         Me.go_back.Text = "Go Back"
         '
         'whack_a_mole_settings
