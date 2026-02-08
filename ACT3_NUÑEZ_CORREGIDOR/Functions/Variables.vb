@@ -352,4 +352,9 @@
     Public Shared cartPaid As Integer
     Public Shared cartChange As Integer
 
+    ' ===============================
+    ' SPECIAL ACTIVITIES
+    ' ===============================
+    Public Shared chosen_activity As String
+
 End Class

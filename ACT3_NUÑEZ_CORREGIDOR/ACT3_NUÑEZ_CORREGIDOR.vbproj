@@ -99,10 +99,10 @@
     <Compile Include="Forms\Library Forms\library_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Game forms\sc_welcome.Designer.vb">
+    <Compile Include="Forms\Special Classes Forms\sc_welcome.Designer.vb">
       <DependentUpon>sc_welcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Game forms\sc_welcome.vb">
+    <Compile Include="Forms\Special Classes Forms\sc_welcome.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Enroll Forms\enroll_step1.Designer.vb">
@@ -154,10 +154,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Functions\Functions.vb" />
-    <Compile Include="Forms\Game forms\sc_main_menu.Designer.vb">
+    <Compile Include="Forms\Special Classes Forms\sc_main_menu.Designer.vb">
       <DependentUpon>sc_main_menu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Game forms\sc_main_menu.vb">
+    <Compile Include="Forms\Special Classes Forms\sc_main_menu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -179,7 +179,7 @@
     <Compile Include="Functions\Variables.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\Game forms\sc_main_menu.resx">
+    <EmbeddedResource Include="Forms\Special Classes Forms\sc_main_menu.resx">
       <DependentUpon>sc_main_menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\main_menu.resx">
@@ -194,7 +194,7 @@
     <EmbeddedResource Include="Forms\Library Forms\library_main.resx">
       <DependentUpon>library_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\sc_welcome.resx">
+    <EmbeddedResource Include="Forms\Special Classes Forms\sc_welcome.resx">
       <DependentUpon>sc_welcome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Enroll Forms\enroll_step1.resx">
@@ -446,6 +446,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\special activities\11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
