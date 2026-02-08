@@ -51,7 +51,7 @@ Partial Class merch_receipt
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.acad_btn = New System.Windows.Forms.Button()
         Me.about_btn = New System.Windows.Forms.Button()
-        Me.games_btn = New System.Windows.Forms.Button()
+        Me.sc_btn = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
@@ -391,7 +391,7 @@ Partial Class merch_receipt
         Me.TableLayoutPanel7.Controls.Add(Me.PictureBox4, 1, 1)
         Me.TableLayoutPanel7.Controls.Add(Me.acad_btn, 1, 3)
         Me.TableLayoutPanel7.Controls.Add(Me.about_btn, 1, 4)
-        Me.TableLayoutPanel7.Controls.Add(Me.games_btn, 1, 5)
+        Me.TableLayoutPanel7.Controls.Add(Me.sc_btn, 1, 5)
         Me.TableLayoutPanel7.Controls.Add(Me.close_hamburger_btn, 2, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(0, 0)
@@ -452,19 +452,19 @@ Partial Class merch_receipt
         Me.about_btn.Text = "About DLSZ"
         Me.about_btn.UseVisualStyleBackColor = False
         '
-        'games_btn
+        'sc_btn
         '
-        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.games_btn.Location = New System.Drawing.Point(30, 199)
-        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
-        Me.games_btn.Name = "games_btn"
-        Me.games_btn.Size = New System.Drawing.Size(240, 39)
-        Me.games_btn.TabIndex = 4
-        Me.games_btn.Text = "Games"
-        Me.games_btn.UseVisualStyleBackColor = True
+        Me.sc_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.sc_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sc_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.sc_btn.Location = New System.Drawing.Point(30, 199)
+        Me.sc_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.sc_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.sc_btn.Name = "sc_btn"
+        Me.sc_btn.Size = New System.Drawing.Size(240, 39)
+        Me.sc_btn.TabIndex = 4
+        Me.sc_btn.Text = "Special Classes"
+        Me.sc_btn.UseVisualStyleBackColor = True
         '
         'close_hamburger_btn
         '
@@ -544,7 +544,7 @@ Partial Class merch_receipt
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents acad_btn As Button
     Friend WithEvents about_btn As Button
-    Friend WithEvents games_btn As Button
+    Friend WithEvents sc_btn As Button
     Friend WithEvents close_hamburger_btn As PictureBox
     Public WithEvents hambuger_menu_timer As Timer
 End Class

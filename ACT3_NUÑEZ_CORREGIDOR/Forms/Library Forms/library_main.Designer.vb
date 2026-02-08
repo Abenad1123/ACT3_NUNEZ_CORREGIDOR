@@ -62,7 +62,7 @@ Partial Class library_main
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.acad_btn = New System.Windows.Forms.Button()
         Me.about_btn = New System.Windows.Forms.Button()
-        Me.games_btn = New System.Windows.Forms.Button()
+        Me.sc_btn = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
@@ -188,7 +188,7 @@ Partial Class library_main
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.423346!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.506186!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.14954!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 34.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.DataGridView1, 4, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 4, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Button2, 4, 2)
@@ -232,7 +232,7 @@ Partial Class library_main
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.GridColor = System.Drawing.Color.Black
-        Me.DataGridView1.Location = New System.Drawing.Point(396, 31)
+        Me.DataGridView1.Location = New System.Drawing.Point(394, 31)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -240,7 +240,7 @@ Partial Class library_main
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 40
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(510, 202)
+        Me.DataGridView1.Size = New System.Drawing.Size(508, 202)
         Me.DataGridView1.TabIndex = 1
         '
         'Column6
@@ -305,17 +305,17 @@ Partial Class library_main
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.04534!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.70529!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 49.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Button3, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.TextBox1, 2, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Button4, 3, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(392, 15)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(390, 15)
         Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(0, 15, 0, 0)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(518, 12)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(516, 12)
         Me.TableLayoutPanel3.TabIndex = 2
         '
         'Button3
@@ -339,7 +339,7 @@ Partial Class library_main
         Me.TextBox1.Location = New System.Drawing.Point(47, 0)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(274, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(271, 30)
         Me.TextBox1.TabIndex = 14
         '
         'Button4
@@ -348,7 +348,7 @@ Partial Class library_main
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ImageIndex = 0
-        Me.Button4.Location = New System.Drawing.Point(326, 0)
+        Me.Button4.Location = New System.Drawing.Point(323, 0)
         Me.Button4.Margin = New System.Windows.Forms.Padding(5, 0, 0, 0)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(32, 12)
@@ -362,7 +362,7 @@ Partial Class library_main
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.ImageIndex = 0
         Me.Button2.ImageList = Me.ImageList1
-        Me.Button2.Location = New System.Drawing.Point(396, 241)
+        Me.Button2.Location = New System.Drawing.Point(394, 241)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -388,7 +388,7 @@ Partial Class library_main
         Me.CheckedListBox1.Location = New System.Drawing.Point(24, 31)
         Me.CheckedListBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(285, 202)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(284, 202)
         Me.CheckedListBox1.TabIndex = 10
         '
         'TableLayoutPanel4
@@ -414,7 +414,7 @@ Partial Class library_main
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.35294!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.11765!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.38688!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(293, 159)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(292, 159)
         Me.TableLayoutPanel4.TabIndex = 11
         '
         'NumericUpDown2
@@ -424,7 +424,7 @@ Partial Class library_main
         Me.NumericUpDown2.Location = New System.Drawing.Point(107, 50)
         Me.NumericUpDown2.Margin = New System.Windows.Forms.Padding(4)
         Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(182, 30)
+        Me.NumericUpDown2.Size = New System.Drawing.Size(181, 30)
         Me.NumericUpDown2.TabIndex = 13
         '
         'NumericUpDown1
@@ -434,7 +434,7 @@ Partial Class library_main
         Me.NumericUpDown1.Location = New System.Drawing.Point(107, 31)
         Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(4)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(182, 30)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(181, 30)
         Me.NumericUpDown1.TabIndex = 12
         '
         'ComboBox1
@@ -446,7 +446,7 @@ Partial Class library_main
         Me.ComboBox1.Location = New System.Drawing.Point(107, 12)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(182, 33)
+        Me.ComboBox1.Size = New System.Drawing.Size(181, 33)
         Me.ComboBox1.TabIndex = 11
         '
         'Label3
@@ -516,7 +516,7 @@ Partial Class library_main
         Me.TableLayoutPanel5.Controls.Add(Me.PictureBox4, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.acad_btn, 1, 3)
         Me.TableLayoutPanel5.Controls.Add(Me.about_btn, 1, 4)
-        Me.TableLayoutPanel5.Controls.Add(Me.games_btn, 1, 5)
+        Me.TableLayoutPanel5.Controls.Add(Me.sc_btn, 1, 5)
         Me.TableLayoutPanel5.Controls.Add(Me.close_hamburger_btn, 2, 0)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(0, 0)
@@ -577,19 +577,19 @@ Partial Class library_main
         Me.about_btn.Text = "About DLSZ"
         Me.about_btn.UseVisualStyleBackColor = False
         '
-        'games_btn
+        'sc_btn
         '
-        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.games_btn.Location = New System.Drawing.Point(0, 199)
-        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
-        Me.games_btn.Name = "games_btn"
-        Me.games_btn.Size = New System.Drawing.Size(1, 39)
-        Me.games_btn.TabIndex = 4
-        Me.games_btn.Text = "Games"
-        Me.games_btn.UseVisualStyleBackColor = True
+        Me.sc_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.sc_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sc_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.sc_btn.Location = New System.Drawing.Point(0, 199)
+        Me.sc_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.sc_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.sc_btn.Name = "sc_btn"
+        Me.sc_btn.Size = New System.Drawing.Size(1, 39)
+        Me.sc_btn.TabIndex = 4
+        Me.sc_btn.Text = "Special Classes"
+        Me.sc_btn.UseVisualStyleBackColor = True
         '
         'close_hamburger_btn
         '
@@ -674,7 +674,7 @@ Partial Class library_main
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents acad_btn As Button
     Friend WithEvents about_btn As Button
-    Friend WithEvents games_btn As Button
+    Friend WithEvents sc_btn As Button
     Friend WithEvents close_hamburger_btn As PictureBox
     Public WithEvents hambuger_menu_timer As Timer
     Friend WithEvents menu_btn As PictureBox

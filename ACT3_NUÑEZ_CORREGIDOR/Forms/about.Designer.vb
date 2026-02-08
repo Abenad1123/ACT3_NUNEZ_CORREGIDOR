@@ -36,7 +36,7 @@ Partial Class about
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.acad_btn = New System.Windows.Forms.Button()
         Me.go_back = New System.Windows.Forms.Button()
-        Me.games_btn = New System.Windows.Forms.Button()
+        Me.sc_btn = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
         Me.hambuger_menu_timer = New System.Windows.Forms.Timer(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
@@ -181,7 +181,7 @@ Partial Class about
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.acad_btn, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.go_back, 1, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.games_btn, 1, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.sc_btn, 1, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.close_hamburger_btn, 2, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
@@ -242,19 +242,19 @@ Partial Class about
         Me.go_back.Text = "Go back"
         Me.go_back.UseVisualStyleBackColor = False
         '
-        'games_btn
+        'sc_btn
         '
-        Me.games_btn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.games_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.games_btn.ForeColor = System.Drawing.SystemColors.Control
-        Me.games_btn.Location = New System.Drawing.Point(30, 199)
-        Me.games_btn.Margin = New System.Windows.Forms.Padding(0)
-        Me.games_btn.MaximumSize = New System.Drawing.Size(0, 60)
-        Me.games_btn.Name = "games_btn"
-        Me.games_btn.Size = New System.Drawing.Size(240, 39)
-        Me.games_btn.TabIndex = 4
-        Me.games_btn.Text = "Games"
-        Me.games_btn.UseVisualStyleBackColor = True
+        Me.sc_btn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.sc_btn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sc_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.sc_btn.Location = New System.Drawing.Point(30, 199)
+        Me.sc_btn.Margin = New System.Windows.Forms.Padding(0)
+        Me.sc_btn.MaximumSize = New System.Drawing.Size(0, 60)
+        Me.sc_btn.Name = "sc_btn"
+        Me.sc_btn.Size = New System.Drawing.Size(240, 39)
+        Me.sc_btn.TabIndex = 4
+        Me.sc_btn.Text = "Special Classes"
+        Me.sc_btn.UseVisualStyleBackColor = True
         '
         'close_hamburger_btn
         '
@@ -311,7 +311,7 @@ Partial Class about
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents acad_btn As Button
     Friend WithEvents go_back As Button
-    Friend WithEvents games_btn As Button
+    Friend WithEvents sc_btn As Button
     Friend WithEvents close_hamburger_btn As PictureBox
     Public WithEvents hambuger_menu_timer As Timer
 End Class

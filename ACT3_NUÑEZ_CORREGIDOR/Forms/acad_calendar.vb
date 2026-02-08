@@ -11,7 +11,7 @@
         hamburger_menu.BackColor = ColorTranslator.FromHtml("#045f33")
         go_back.BackColor = ColorTranslator.FromHtml("#045f33")
         about_btn.BackColor = ColorTranslator.FromHtml("#045f33")
-        games_btn.BackColor = ColorTranslator.FromHtml("#045f33")
+        sc_btn.BackColor = ColorTranslator.FromHtml("#045f33")
     End Sub
 
     Private Sub enroll_btn_Click(sender As Object, e As EventArgs) Handles enroll_btn.Click
@@ -34,8 +34,8 @@
         OpenForm(Of about)(Me)
     End Sub
 
-    Private Sub games_btn_click(sender As Object, e As EventArgs) Handles games_btn.Click
-        OpenForm(Of game_welcome)(Me)
+    Private Sub games_btn_click(sender As Object, e As EventArgs) Handles sc_btn.Click
+        OpenForm(Of sc_welcome)(Me)
     End Sub
 
     Private Sub Menu_Click(sender As Object, e As EventArgs) Handles menu_btn.Click, Panel1.Click

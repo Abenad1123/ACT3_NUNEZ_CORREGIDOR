@@ -73,24 +73,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Game forms\game setting forms\whack_a_mole_settings.Designer.vb">
-      <DependentUpon>whack_a_mole_settings.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Game forms\game setting forms\whack_a_mole_settings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Game forms\mathchallenge_main.Designer.vb">
-      <DependentUpon>mathchallenge_main.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Game forms\mathchallenge_main.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Game forms\reactiontime_main.Designer.vb">
-      <DependentUpon>reactiontime_main.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Game forms\reactiontime_main.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Functions\game_variables.vb" />
     <Compile Include="Forms\main_menu.vb">
       <SubType>Form</SubType>
@@ -117,10 +99,10 @@
     <Compile Include="Forms\Library Forms\library_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Game forms\game_welcome.Designer.vb">
-      <DependentUpon>game_welcome.vb</DependentUpon>
+    <Compile Include="Forms\Game forms\sc_welcome.Designer.vb">
+      <DependentUpon>sc_welcome.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Game forms\game_welcome.vb">
+    <Compile Include="Forms\Game forms\sc_welcome.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Enroll Forms\enroll_step1.Designer.vb">
@@ -172,28 +154,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Functions\Functions.vb" />
-    <Compile Include="Forms\Game forms\evade_a_missile_main.Designer.vb">
-      <DependentUpon>evade_a_missile_main.vb</DependentUpon>
+    <Compile Include="Forms\Game forms\sc_main_menu.Designer.vb">
+      <DependentUpon>sc_main_menu.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Game forms\evade_a_missile_main.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Game forms\game_main_menu.Designer.vb">
-      <DependentUpon>game_main_menu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Game forms\game_main_menu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Game forms\rock_paper_scissors_main.Designer.vb">
-      <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Game forms\rock_paper_scissors_main.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Game forms\whack_a_mole_main.Designer.vb">
-      <DependentUpon>whack_a_mole_main.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Game forms\whack_a_mole_main.vb">
+    <Compile Include="Forms\Game forms\sc_main_menu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -215,17 +179,8 @@
     <Compile Include="Functions\Variables.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\Game forms\game setting forms\whack_a_mole_settings.resx">
-      <DependentUpon>whack_a_mole_settings.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\game_main_menu.resx">
-      <DependentUpon>game_main_menu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\mathchallenge_main.resx">
-      <DependentUpon>mathchallenge_main.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\reactiontime_main.resx">
-      <DependentUpon>reactiontime_main.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Game forms\sc_main_menu.resx">
+      <DependentUpon>sc_main_menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\main_menu.resx">
       <DependentUpon>main_menu.vb</DependentUpon>
@@ -239,8 +194,8 @@
     <EmbeddedResource Include="Forms\Library Forms\library_main.resx">
       <DependentUpon>library_main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\game_welcome.resx">
-      <DependentUpon>game_welcome.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Game forms\sc_welcome.resx">
+      <DependentUpon>sc_welcome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Enroll Forms\enroll_step1.resx">
       <DependentUpon>enroll_step1.vb</DependentUpon>
@@ -265,15 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Merch Forms\merch_main.resx">
       <DependentUpon>merch_main.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\evade_a_missile_main.resx">
-      <DependentUpon>evade_a_missile_main.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\rock_paper_scissors_main.resx">
-      <DependentUpon>rock_paper_scissors_main.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Game forms\whack_a_mole_main.resx">
-      <DependentUpon>whack_a_mole_main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
