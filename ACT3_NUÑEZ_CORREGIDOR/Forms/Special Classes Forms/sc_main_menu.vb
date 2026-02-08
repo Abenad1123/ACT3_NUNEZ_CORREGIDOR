@@ -66,6 +66,8 @@ Public Class sc_main_menu
     Private Visual_Arts() As TableLayoutPanel
     Private Buttons_Control() As PictureBox
 
+    Dim activities() As String = {"ballet", "swimming", "karate", "piano", "guitar", "violin", "singing", "theater", "acting", "painting", "drawing"}
+
     Dim descriptions() As String = {
             "Learn classical ballet techniques, posture, flexibility, and basic choreography through guided practice and performance exercises.",
             "Develop proper swimming techniques, water safety skills, and confidence in the water through structured training sessions.",
@@ -133,20 +135,16 @@ Public Class sc_main_menu
                     Next
                 Next
             Case "Performing Arts"
-                For Each box In Performing_Arts
-                    box.Visible = True
+                For Each box In Performing_Arts : box.Visible = True
                 Next
             Case "Music"
-                For Each box In Music
-                    box.Visible = True
+                For Each box In Music : box.Visible = True
                 Next
             Case "Sports & Martial Arts"
-                For Each box In Sports_N_Martial_Arts
-                    box.Visible = True
+                For Each box In Sports_N_Martial_Arts : box.Visible = True
                 Next
             Case "Visual Arts"
-                For Each box In Performing_Arts
-                    box.Visible = True
+                For Each box In Performing_Arts : box.Visible = True
                 Next
         End Select
     End Sub
@@ -154,12 +152,9 @@ Public Class sc_main_menu
     Private Sub PictureBox_Click(sender As Object, e As EventArgs)
         Dim selected As Integer
         Dim pb As PictureBox = CType(sender, PictureBox)
-        Dim activities() As String = {"ballet", "swimming", "karate", "piano", "guitar", "violin", "singing", "theater", "acting", "painting", "drawing"}
 
         For i = 0 To Buttons_Control.Count - 1
-            If Buttons_Control(i) Is pb Then
-                selected = i + 1
-            End If
+            If Buttons_Control(i) Is pb Then selected = i + 1
         Next
 
         For i = 0 To activities.Count - 1
