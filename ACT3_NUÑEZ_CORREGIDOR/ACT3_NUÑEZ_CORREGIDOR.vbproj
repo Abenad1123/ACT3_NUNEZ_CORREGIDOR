@@ -480,5 +480,11 @@
   <ItemGroup>
     <None Include="assets\special activities\11.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\view_detail_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\view_detail_btn_hover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

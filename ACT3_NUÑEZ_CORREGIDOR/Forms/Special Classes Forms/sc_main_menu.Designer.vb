@@ -33,6 +33,13 @@ Partial Class sc_main_menu
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel25 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel26 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel27 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
@@ -99,6 +106,10 @@ Partial Class sc_main_menu
         Me.about_btn = New System.Windows.Forms.Button()
         Me.go_back = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel28 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -107,6 +118,10 @@ Partial Class sc_main_menu
         CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.TableLayoutPanel25.SuspendLayout()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel26.SuspendLayout()
+        Me.TableLayoutPanel27.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,6 +171,8 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel28.SuspendLayout()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -273,24 +290,132 @@ Partial Class sc_main_menu
         '
         Me.Panel2.Controls.Add(Me.TableLayoutPanel25)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 1550)
+        Me.Panel2.Location = New System.Drawing.Point(0, 1557)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1881, 1154)
         Me.Panel2.TabIndex = 3
         '
         'TableLayoutPanel25
         '
-        Me.TableLayoutPanel25.ColumnCount = 2
-        Me.TableLayoutPanel25.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel25.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel25.ColumnCount = 4
+        Me.TableLayoutPanel25.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel25.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel25.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.0!))
+        Me.TableLayoutPanel25.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel25.Controls.Add(Me.PictureBox25, 1, 1)
+        Me.TableLayoutPanel25.Controls.Add(Me.TableLayoutPanel26, 2, 2)
+        Me.TableLayoutPanel25.Controls.Add(Me.TableLayoutPanel27, 2, 1)
+        Me.TableLayoutPanel25.Controls.Add(Me.TableLayoutPanel28, 2, 3)
+        Me.TableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel25.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel25.Margin = New System.Windows.Forms.Padding(0)
         Me.TableLayoutPanel25.Name = "TableLayoutPanel25"
-        Me.TableLayoutPanel25.RowCount = 2
-        Me.TableLayoutPanel25.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel25.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel25.Size = New System.Drawing.Size(1881, 1154)
+        Me.TableLayoutPanel25.RowCount = 4
+        Me.TableLayoutPanel25.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel25.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel25.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel25.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel25.Size = New System.Drawing.Size(1881, 725)
         Me.TableLayoutPanel25.TabIndex = 0
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox25.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources._1
+        Me.PictureBox25.Location = New System.Drawing.Point(97, 53)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.TableLayoutPanel25.SetRowSpan(Me.PictureBox25, 3)
+        Me.PictureBox25.Size = New System.Drawing.Size(558, 669)
+        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox25.TabIndex = 1
+        Me.PictureBox25.TabStop = False
+        '
+        'TableLayoutPanel26
+        '
+        Me.TableLayoutPanel26.ColumnCount = 2
+        Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
+        Me.TableLayoutPanel26.Controls.Add(Me.Label20, 1, 1)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label19, 1, 0)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label13, 0, 0)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label14, 0, 1)
+        Me.TableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel26.Location = New System.Drawing.Point(658, 274)
+        Me.TableLayoutPanel26.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel26.Name = "TableLayoutPanel26"
+        Me.TableLayoutPanel26.RowCount = 5
+        Me.TableLayoutPanel26.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel26.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel26.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel26.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel26.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel26.Size = New System.Drawing.Size(1128, 225)
+        Me.TableLayoutPanel26.TabIndex = 2
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(235, 3)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(100, 39)
+        Me.Label13.TabIndex = 0
+        Me.Label13.Text = "Price"
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(167, 48)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(168, 39)
+        Me.Label14.TabIndex = 1
+        Me.Label14.Text = "Schedule"
+        '
+        'TableLayoutPanel27
+        '
+        Me.TableLayoutPanel27.ColumnCount = 2
+        Me.TableLayoutPanel27.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel27.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel27.Controls.Add(Me.Label18, 0, 1)
+        Me.TableLayoutPanel27.Controls.Add(Me.Label17, 0, 0)
+        Me.TableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel27.Location = New System.Drawing.Point(658, 50)
+        Me.TableLayoutPanel27.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel27.Name = "TableLayoutPanel27"
+        Me.TableLayoutPanel27.RowCount = 2
+        Me.TableLayoutPanel27.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel27.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel27.Size = New System.Drawing.Size(1128, 224)
+        Me.TableLayoutPanel27.TabIndex = 3
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.TableLayoutPanel27.SetColumnSpan(Me.Label18, 2)
+        Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label18.Location = New System.Drawing.Point(20, 112)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(20, 0, 0, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(1108, 112)
+        Me.Label18.TabIndex = 4
+        Me.Label18.Text = "Description Placeholder [Label18]"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.TableLayoutPanel27.SetColumnSpan(Me.Label17, 2)
+        Me.Label17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 40.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(3, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(1122, 112)
+        Me.Label17.TabIndex = 0
+        Me.Label17.Text = "Title Placeholder [Label17]"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'ComboBox1
         '
@@ -298,7 +423,7 @@ Partial Class sc_main_menu
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"All", "Performing Arts", "Music", "Sports & Martial Arts", "Visual Arts"})
-        Me.ComboBox1.Location = New System.Drawing.Point(229, 210)
+        Me.ComboBox1.Location = New System.Drawing.Point(284, 417)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(655, 54)
         Me.ComboBox1.TabIndex = 2
@@ -308,7 +433,7 @@ Partial Class sc_main_menu
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(41, 213)
+        Me.Label12.Location = New System.Drawing.Point(70, 417)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(182, 46)
         Me.Label12.TabIndex = 1
@@ -329,10 +454,10 @@ Partial Class sc_main_menu
         Me.FlowLayoutPanel1.Controls.Add(Me.TableLayoutPanel19)
         Me.FlowLayoutPanel1.Controls.Add(Me.TableLayoutPanel21)
         Me.FlowLayoutPanel1.Controls.Add(Me.TableLayoutPanel23)
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 281)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 499)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1881, 1269)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1881, 1058)
         Me.FlowLayoutPanel1.TabIndex = 0
         Me.FlowLayoutPanel1.WrapContents = False
         '
@@ -386,7 +511,7 @@ Partial Class sc_main_menu
         'PictureBox3
         '
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox3.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.view_detail_btn
         Me.PictureBox3.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -458,7 +583,7 @@ Partial Class sc_main_menu
         'PictureBox6
         '
         Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox6.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -530,7 +655,7 @@ Partial Class sc_main_menu
         'PictureBox8
         '
         Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox8.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
         Me.PictureBox8.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -602,7 +727,7 @@ Partial Class sc_main_menu
         'PictureBox10
         '
         Me.PictureBox10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox10.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
         Me.PictureBox10.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -674,7 +799,7 @@ Partial Class sc_main_menu
         'PictureBox12
         '
         Me.PictureBox12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox12.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
         Me.PictureBox12.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -746,7 +871,7 @@ Partial Class sc_main_menu
         'PictureBox14
         '
         Me.PictureBox14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox14.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
         Me.PictureBox14.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -818,7 +943,7 @@ Partial Class sc_main_menu
         'PictureBox16
         '
         Me.PictureBox16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox16.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
         Me.PictureBox16.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -890,7 +1015,7 @@ Partial Class sc_main_menu
         'PictureBox18
         '
         Me.PictureBox18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox18.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), System.Drawing.Image)
         Me.PictureBox18.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox18.Name = "PictureBox18"
         Me.PictureBox18.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -962,7 +1087,7 @@ Partial Class sc_main_menu
         'PictureBox20
         '
         Me.PictureBox20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox20.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
         Me.PictureBox20.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox20.Name = "PictureBox20"
         Me.PictureBox20.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -1034,7 +1159,7 @@ Partial Class sc_main_menu
         'PictureBox22
         '
         Me.PictureBox22.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox22.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
         Me.PictureBox22.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox22.Name = "PictureBox22"
         Me.PictureBox22.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -1106,7 +1231,7 @@ Partial Class sc_main_menu
         'PictureBox24
         '
         Me.PictureBox24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox24.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox24.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.view_detail_btn
         Me.PictureBox24.Location = New System.Drawing.Point(50, 3)
         Me.PictureBox24.Name = "PictureBox24"
         Me.PictureBox24.Padding = New System.Windows.Forms.Padding(60, 10, 60, 10)
@@ -1241,6 +1366,57 @@ Partial Class sc_main_menu
         Me.close_hamburger_btn.TabIndex = 5
         Me.close_hamburger_btn.TabStop = False
         '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label19.Location = New System.Drawing.Point(341, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(784, 45)
+        Me.Label19.TabIndex = 4
+        Me.Label19.Text = "Price Placeholder [Label19]"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label20.Location = New System.Drawing.Point(341, 45)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(784, 45)
+        Me.Label20.TabIndex = 5
+        Me.Label20.Text = "Saturday or Sunday"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TableLayoutPanel28
+        '
+        Me.TableLayoutPanel28.ColumnCount = 3
+        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
+        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel28.Controls.Add(Me.PictureBox26, 1, 1)
+        Me.TableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel28.Location = New System.Drawing.Point(658, 499)
+        Me.TableLayoutPanel28.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel28.Name = "TableLayoutPanel28"
+        Me.TableLayoutPanel28.RowCount = 3
+        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
+        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.55556!))
+        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
+        Me.TableLayoutPanel28.Size = New System.Drawing.Size(1128, 226)
+        Me.TableLayoutPanel28.TabIndex = 4
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox26.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox26.Location = New System.Drawing.Point(341, 53)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(445, 119)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox26.TabIndex = 0
+        Me.PictureBox26.TabStop = False
+        '
         'sc_main_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1261,6 +1437,12 @@ Partial Class sc_main_menu
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        Me.TableLayoutPanel25.ResumeLayout(False)
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel26.ResumeLayout(False)
+        Me.TableLayoutPanel26.PerformLayout()
+        Me.TableLayoutPanel27.ResumeLayout(False)
+        Me.TableLayoutPanel27.PerformLayout()
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
@@ -1321,6 +1503,8 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel28.ResumeLayout(False)
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1400,4 +1584,15 @@ Partial Class sc_main_menu
     Friend WithEvents Label12 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents TableLayoutPanel25 As TableLayoutPanel
+    Friend WithEvents PictureBox25 As PictureBox
+    Friend WithEvents TableLayoutPanel26 As TableLayoutPanel
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents TableLayoutPanel27 As TableLayoutPanel
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents TableLayoutPanel28 As TableLayoutPanel
+    Friend WithEvents PictureBox26 As PictureBox
 End Class

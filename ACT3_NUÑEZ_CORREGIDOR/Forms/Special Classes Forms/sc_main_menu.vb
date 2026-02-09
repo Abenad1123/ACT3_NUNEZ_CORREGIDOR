@@ -66,7 +66,10 @@ Public Class sc_main_menu
     Private Visual_Arts() As TableLayoutPanel
     Private Buttons_Control() As PictureBox
 
-    Dim activities() As String = {"ballet", "swimming", "karate", "piano", "guitar", "violin", "singing", "theater", "acting", "painting", "drawing"}
+    Private pictures() As Image
+    Private activity_price() As Integer = {5000, 5000, 4200, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 4500, 4500}
+
+    Dim activities() As String = {"Ballet", "Swimming", "Karate", "Piano", "Guitar", "Violin", "Singing", "Theater", "Acting", "Painting", "Drawing"}
 
     Dim descriptions() As String = {
             "Learn classical ballet techniques, posture, flexibility, and basic choreography through guided practice and performance exercises.",
@@ -90,11 +93,11 @@ Public Class sc_main_menu
 
         Dim buttons() As PictureBox = {PictureBox3, PictureBox6, PictureBox8, PictureBox10, PictureBox12, PictureBox14, PictureBox16, PictureBox18, PictureBox20, PictureBox22, PictureBox24}
         Dim pictureBoxes() As PictureBox = {PictureBox2, PictureBox5, PictureBox7, PictureBox9, PictureBox11, PictureBox13, PictureBox15, PictureBox17, PictureBox19, PictureBox21, PictureBox23}
-        Dim pictures() As Image = {My.Resources._1, My.Resources._2, My.Resources._3, My.Resources._4, My.Resources._5, My.Resources._6, My.Resources._7, My.Resources._8, My.Resources._9, My.Resources._10, My.Resources._11}
+        pictures = {My.Resources._1, My.Resources._2, My.Resources._3, My.Resources._4, My.Resources._5, My.Resources._6, My.Resources._7, My.Resources._8, My.Resources._9, My.Resources._10, My.Resources._11}
         Dim Labels() As System.Windows.Forms.Label = {Label1, Label2, Label3, Label4, Label5, Label6, Label7, Label8, Label9, Label10, Label11}
 
         For Each btn In buttons
-            Basic.ImgHover(btn, My.Resources.apply_btn, My.Resources.apply_btn_hover)
+            Basic.ImgHover(btn, My.Resources.view_detail_btn, My.Resources.view_detail_btn_hover)
         Next
 
         For index As Integer = 0 To 10
@@ -110,6 +113,8 @@ Public Class sc_main_menu
         For Each pb In Buttons_Control
             AddHandler pb.Click, AddressOf PictureBox_Click
         Next
+
+        TableLayoutPanel25.Visible = False
     End Sub
 
     Private Sub MeResize(sender As Object, e As EventArgs) Handles MyBase.Resize
@@ -160,9 +165,17 @@ Public Class sc_main_menu
         For i = 0 To activities.Count - 1
             If i + 1 = selected Then
                 var.chosen_activity = activities(i)
-                MessageBox.Show($"Clicked {var.chosen_activity}")
+
+                PictureBox25.Image = pictures(i)
+                Label17.Text = var.chosen_activity & " Lesson"
+                Label18.Text = descriptions(i)
+                Label19.Text = "Php " & activity_price(i).ToString() & ".00 / Year"
+                TableLayoutPanel25.Visible = True
             End If
         Next
     End Sub
 
+    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
+
+    End Sub
 End Class
