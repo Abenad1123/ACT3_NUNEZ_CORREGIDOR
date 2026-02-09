@@ -357,4 +357,11 @@
     ' ===============================
     Public Shared chosen_activity As String
 
+    Public Shared activity_slots() As Integer = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10}
+
+    Public Shared sc_name As String
+    Public Shared sc_age As Integer
+    Public Shared sc_gender As String
+    Public Shared sc_grade_lvl As String
+
 End Class

@@ -71,6 +71,21 @@ Public Class sc_main_menu
 
     Dim activities() As String = {"Ballet", "Swimming", "Karate", "Piano", "Guitar", "Violin", "Singing", "Theater", "Acting", "Painting", "Drawing"}
 
+    Dim attire() As String = {
+        "Stretchable, comfortable clothing",
+        "Modest swimwear",
+        "Loose, comfortable clothing",
+        "Neat casual clothing",
+        "Neat casual clothing",
+        "Neat casual clothing",
+        "Neat casual clothing",
+        "Comfortable casual clothing",
+        "Comfortable casual clothing",
+        "Casual clothing, may get messy",
+        "Casual comfortable clothing"
+    }
+
+
     Dim descriptions() As String = {
             "Learn classical ballet techniques, posture, flexibility, and basic choreography through guided practice and performance exercises.",
             "Develop proper swimming techniques, water safety skills, and confidence in the water through structured training sessions.",
@@ -84,6 +99,21 @@ Public Class sc_main_menu
             "Learn basic painting techniques, color blending, and visual composition using various art materials.",
             "Develop drawing skills by practicing line work, shading, and creative visual expression through guided exercises."
         }
+
+    Dim long_descriptions() As String = {
+        "Learn classical ballet techniques with a strong focus on posture, balance, flexibility, and coordination. Students practice foundational movements, positions, and simple choreography through guided exercises designed to improve grace, strength, and stage presence.",
+        "Develop proper swimming techniques while building water safety awareness, endurance, and confidence in the pool. Structured training sessions focus on breathing control, stroke fundamentals, floating skills, and overall swimming efficiency.",
+        "Build discipline, physical strength, flexibility, and self-defense skills through structured martial arts training. Students learn fundamental stances, strikes, blocks, and movements while improving focus, respect, and self-confidence.",
+        "Learn piano fundamentals including correct hand positioning, finger strength, note reading, rhythm, and basic music theory. Guided practice sessions help students play simple melodies, improve coordination, and develop musical expression.",
+        "Develop guitar skills by learning basic chords, strumming patterns, finger placement, and introductory music reading. Practice sessions focus on rhythm, chord transitions, and playing simple songs to build confidence and technique.",
+        "Learn violin fundamentals such as proper posture, bow control, finger placement, and tone production. Structured lessons guide students through scales, simple pieces, and exercises that develop musical accuracy and sound quality.",
+        "Improve vocal strength, pitch accuracy, tone quality, and stage confidence through proper breathing techniques and vocal exercises. Guided singing activities help students develop control, expression, and performance skills.",
+        "Explore stage performance through script reading, character interpretation, movement, and theatrical expression. Guided theater workshops encourage creativity, teamwork, and confidence while introducing basic stage techniques.",
+        "Develop acting skills such as facial expression, voice modulation, improvisation, and character portrayal. Interactive performance activities help students build confidence, emotional awareness, and storytelling abilities.",
+        "Learn basic painting techniques including brush control, color mixing, shading, and composition. Students experiment with various art materials while developing creativity and an understanding of visual design principles.",
+        "Develop drawing skills by practicing line work, proportion, shading, and perspective. Guided exercises encourage creative visual expression while building strong foundational drawing techniques."
+    }
+
     Private Sub MeLoad(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Performing_Arts = {TableLayoutPanel2, TableLayoutPanel17, TableLayoutPanel19}
@@ -99,6 +129,7 @@ Public Class sc_main_menu
         For Each btn In buttons
             Basic.ImgHover(btn, My.Resources.view_detail_btn, My.Resources.view_detail_btn_hover)
         Next
+        Basic.ImgHover(PictureBox26, My.Resources.apply_btn, My.Resources.apply_btn_hover)
 
         For index As Integer = 0 To 10
             pictureBoxes(index).Image = pictures(index)
@@ -168,14 +199,20 @@ Public Class sc_main_menu
 
                 PictureBox25.Image = pictures(i)
                 Label17.Text = var.chosen_activity & " Lesson"
-                Label18.Text = descriptions(i)
+                Label18.Text = long_descriptions(i)
                 Label19.Text = "Php " & activity_price(i).ToString() & ".00 / Year"
+                Label22.Text = var.activity_slots(i)
+                Label16.Text = attire(i)
+
                 TableLayoutPanel25.Visible = True
             End If
         Next
     End Sub
 
-    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
-
+    Private Sub PictureBox26_Click(sender As Object, e As EventArgs) Handles PictureBox26.Click
+        var.sc_name = InputBox("Enter your name: ", "Information")
+        var.sc_age = InputBox("Enter your age: ", "Information")
+        var.sc_gender = InputBox("Enter your gender: ", "Information")
+        var.sc_grade_lvl = InputBox("Enter your gender: ", "Information")
     End Sub
 End Class

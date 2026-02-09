@@ -32,14 +32,23 @@ Partial Class sc_main_menu
         Me.library_btn = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel29 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel25 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel26 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel27 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel28 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
@@ -106,11 +115,6 @@ Partial Class sc_main_menu
         Me.about_btn = New System.Windows.Forms.Button()
         Me.go_back = New System.Windows.Forms.Button()
         Me.close_hamburger_btn = New System.Windows.Forms.PictureBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel28 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.TableLayoutPanel29 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -123,6 +127,8 @@ Partial Class sc_main_menu
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel26.SuspendLayout()
         Me.TableLayoutPanel27.SuspendLayout()
+        Me.TableLayoutPanel28.SuspendLayout()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -172,8 +178,6 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel28.SuspendLayout()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -298,6 +302,20 @@ Partial Class sc_main_menu
         Me.Panel2.Size = New System.Drawing.Size(1881, 1154)
         Me.Panel2.TabIndex = 3
         '
+        'TableLayoutPanel29
+        '
+        Me.TableLayoutPanel29.ColumnCount = 2
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel29.Location = New System.Drawing.Point(0, 725)
+        Me.TableLayoutPanel29.Name = "TableLayoutPanel29"
+        Me.TableLayoutPanel29.RowCount = 2
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.Size = New System.Drawing.Size(1881, 100)
+        Me.TableLayoutPanel29.TabIndex = 1
+        '
         'TableLayoutPanel25
         '
         Me.TableLayoutPanel25.ColumnCount = 4
@@ -338,10 +356,14 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel26.ColumnCount = 2
         Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
         Me.TableLayoutPanel26.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
-        Me.TableLayoutPanel26.Controls.Add(Me.Label20, 1, 1)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label22, 1, 1)
         Me.TableLayoutPanel26.Controls.Add(Me.Label19, 1, 0)
         Me.TableLayoutPanel26.Controls.Add(Me.Label13, 0, 0)
-        Me.TableLayoutPanel26.Controls.Add(Me.Label14, 0, 1)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label20, 1, 2)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label21, 0, 1)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label16, 1, 3)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label14, 0, 2)
+        Me.TableLayoutPanel26.Controls.Add(Me.Label15, 0, 3)
         Me.TableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel26.Location = New System.Drawing.Point(658, 274)
         Me.TableLayoutPanel26.Margin = New System.Windows.Forms.Padding(0)
@@ -355,27 +377,97 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel26.Size = New System.Drawing.Size(1128, 225)
         Me.TableLayoutPanel26.TabIndex = 2
         '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label22.Location = New System.Drawing.Point(338, 45)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(790, 45)
+        Me.Label22.TabIndex = 10
+        Me.Label22.Text = "Slots Placeholder [Label22]"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label19.Location = New System.Drawing.Point(338, 0)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(790, 45)
+        Me.Label19.TabIndex = 4
+        Me.Label19.Text = "Price Placeholder [Label19]"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Label13
         '
         Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(235, 3)
+        Me.Label13.Location = New System.Drawing.Point(238, 3)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(100, 39)
+        Me.Label13.Size = New System.Drawing.Size(97, 38)
         Me.Label13.TabIndex = 0
         Me.Label13.Text = "Price"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label20.Location = New System.Drawing.Point(338, 90)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(790, 45)
+        Me.Label20.TabIndex = 5
+        Me.Label20.Text = "Saturday or Sunday"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label21
+        '
+        Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(119, 48)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(216, 38)
+        Me.Label21.TabIndex = 8
+        Me.Label21.Text = "Current slots"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label16.Location = New System.Drawing.Point(338, 135)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(790, 45)
+        Me.Label16.TabIndex = 9
+        Me.Label16.Text = "Attire Placeholder [Label16]"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label14
         '
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(167, 48)
+        Me.Label14.Location = New System.Drawing.Point(174, 93)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(168, 39)
+        Me.Label14.Size = New System.Drawing.Size(161, 38)
         Me.Label14.TabIndex = 1
         Me.Label14.Text = "Schedule"
+        '
+        'Label15
+        '
+        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(236, 138)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(99, 38)
+        Me.Label15.TabIndex = 6
+        Me.Label15.Text = "Attire"
         '
         'TableLayoutPanel27
         '
@@ -399,6 +491,7 @@ Partial Class sc_main_menu
         Me.Label18.AutoSize = True
         Me.TableLayoutPanel27.SetColumnSpan(Me.Label18, 2)
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.Location = New System.Drawing.Point(20, 112)
         Me.Label18.Margin = New System.Windows.Forms.Padding(20, 0, 0, 0)
         Me.Label18.Name = "Label18"
@@ -418,6 +511,35 @@ Partial Class sc_main_menu
         Me.Label17.TabIndex = 0
         Me.Label17.Text = "Title Placeholder [Label17]"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TableLayoutPanel28
+        '
+        Me.TableLayoutPanel28.ColumnCount = 3
+        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
+        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel28.Controls.Add(Me.PictureBox26, 1, 1)
+        Me.TableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel28.Location = New System.Drawing.Point(658, 499)
+        Me.TableLayoutPanel28.Margin = New System.Windows.Forms.Padding(0)
+        Me.TableLayoutPanel28.Name = "TableLayoutPanel28"
+        Me.TableLayoutPanel28.RowCount = 3
+        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
+        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.55556!))
+        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
+        Me.TableLayoutPanel28.Size = New System.Drawing.Size(1128, 226)
+        Me.TableLayoutPanel28.TabIndex = 4
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox26.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
+        Me.PictureBox26.Location = New System.Drawing.Point(341, 53)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(445, 119)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox26.TabIndex = 0
+        Me.PictureBox26.TabStop = False
         '
         'ComboBox1
         '
@@ -1368,71 +1490,6 @@ Partial Class sc_main_menu
         Me.close_hamburger_btn.TabIndex = 5
         Me.close_hamburger_btn.TabStop = False
         '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label19.Location = New System.Drawing.Point(341, 0)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(784, 45)
-        Me.Label19.TabIndex = 4
-        Me.Label19.Text = "Price Placeholder [Label19]"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label20.Location = New System.Drawing.Point(341, 45)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(784, 45)
-        Me.Label20.TabIndex = 5
-        Me.Label20.Text = "Saturday or Sunday"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TableLayoutPanel28
-        '
-        Me.TableLayoutPanel28.ColumnCount = 3
-        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
-        Me.TableLayoutPanel28.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
-        Me.TableLayoutPanel28.Controls.Add(Me.PictureBox26, 1, 1)
-        Me.TableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel28.Location = New System.Drawing.Point(658, 499)
-        Me.TableLayoutPanel28.Margin = New System.Windows.Forms.Padding(0)
-        Me.TableLayoutPanel28.Name = "TableLayoutPanel28"
-        Me.TableLayoutPanel28.RowCount = 3
-        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
-        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.55556!))
-        Me.TableLayoutPanel28.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.22222!))
-        Me.TableLayoutPanel28.Size = New System.Drawing.Size(1128, 226)
-        Me.TableLayoutPanel28.TabIndex = 4
-        '
-        'PictureBox26
-        '
-        Me.PictureBox26.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox26.Image = Global.ACT3_NUÑEZ_CORREGIDOR.My.Resources.Resources.apply_btn
-        Me.PictureBox26.Location = New System.Drawing.Point(341, 53)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(445, 119)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox26.TabIndex = 0
-        Me.PictureBox26.TabStop = False
-        '
-        'TableLayoutPanel29
-        '
-        Me.TableLayoutPanel29.ColumnCount = 2
-        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TableLayoutPanel29.Location = New System.Drawing.Point(0, 725)
-        Me.TableLayoutPanel29.Name = "TableLayoutPanel29"
-        Me.TableLayoutPanel29.RowCount = 2
-        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.Size = New System.Drawing.Size(1881, 100)
-        Me.TableLayoutPanel29.TabIndex = 1
-        '
         'sc_main_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1459,6 +1516,8 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel26.PerformLayout()
         Me.TableLayoutPanel27.ResumeLayout(False)
         Me.TableLayoutPanel27.PerformLayout()
+        Me.TableLayoutPanel28.ResumeLayout(False)
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
@@ -1519,8 +1578,6 @@ Partial Class sc_main_menu
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.close_hamburger_btn, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel28.ResumeLayout(False)
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1612,4 +1669,8 @@ Partial Class sc_main_menu
     Friend WithEvents TableLayoutPanel28 As TableLayoutPanel
     Friend WithEvents PictureBox26 As PictureBox
     Friend WithEvents TableLayoutPanel29 As TableLayoutPanel
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label16 As Label
 End Class
