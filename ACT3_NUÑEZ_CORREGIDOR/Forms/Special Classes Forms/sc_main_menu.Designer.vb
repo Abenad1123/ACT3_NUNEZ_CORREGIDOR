@@ -110,6 +110,7 @@ Partial Class sc_main_menu
         Me.Label20 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel28 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel29 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.enroll_btn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -288,6 +289,7 @@ Partial Class sc_main_menu
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.TableLayoutPanel29)
         Me.Panel2.Controls.Add(Me.TableLayoutPanel25)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 1557)
@@ -1417,6 +1419,20 @@ Partial Class sc_main_menu
         Me.PictureBox26.TabIndex = 0
         Me.PictureBox26.TabStop = False
         '
+        'TableLayoutPanel29
+        '
+        Me.TableLayoutPanel29.ColumnCount = 2
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TableLayoutPanel29.Location = New System.Drawing.Point(0, 725)
+        Me.TableLayoutPanel29.Name = "TableLayoutPanel29"
+        Me.TableLayoutPanel29.RowCount = 2
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.Size = New System.Drawing.Size(1881, 100)
+        Me.TableLayoutPanel29.TabIndex = 1
+        '
         'sc_main_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1595,4 +1611,5 @@ Partial Class sc_main_menu
     Friend WithEvents Label20 As Label
     Friend WithEvents TableLayoutPanel28 As TableLayoutPanel
     Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents TableLayoutPanel29 As TableLayoutPanel
 End Class
