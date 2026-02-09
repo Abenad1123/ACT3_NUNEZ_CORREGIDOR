@@ -146,6 +146,12 @@ Public Class sc_main_menu
         Next
 
         TableLayoutPanel25.Visible = False
+        TableLayoutPanel29.Visible = False
+
+        ' Correct order:
+        DateTimePicker1.ShowUpDown = True
+        DateTimePicker1.Format = DateTimePickerFormat.Custom
+        DateTimePicker1.CustomFormat = "MMMM yyyy"
     End Sub
 
     Private Sub MeResize(sender As Object, e As EventArgs) Handles MyBase.Resize
@@ -185,8 +191,9 @@ Public Class sc_main_menu
         End Select
     End Sub
 
+    Dim selected As Integer
     Private Sub PictureBox_Click(sender As Object, e As EventArgs)
-        Dim selected As Integer
+
         Dim pb As PictureBox = CType(sender, PictureBox)
 
         For i = 0 To Buttons_Control.Count - 1
@@ -200,7 +207,7 @@ Public Class sc_main_menu
                 PictureBox25.Image = pictures(i)
                 Label17.Text = var.chosen_activity & " Lesson"
                 Label18.Text = long_descriptions(i)
-                Label19.Text = "Php " & activity_price(i).ToString() & ".00 / Year"
+                Label19.Text = "Php " & activity_price(i).ToString() & ".00 / Month"
                 Label22.Text = var.activity_slots(i)
                 Label16.Text = attire(i)
 
@@ -210,9 +217,34 @@ Public Class sc_main_menu
     End Sub
 
     Private Sub PictureBox26_Click(sender As Object, e As EventArgs) Handles PictureBox26.Click
+        TableLayoutPanel29.Visible = True
         var.sc_name = InputBox("Enter your name: ", "Information")
         var.sc_age = InputBox("Enter your age: ", "Information")
         var.sc_gender = InputBox("Enter your gender: ", "Information")
-        var.sc_grade_lvl = InputBox("Enter your gender: ", "Information")
+        var.sc_grade_lvl = InputBox("Enter your grade level: ", "Information")
+
+        For i = 0 To activities.Count - 1
+            If i + 1 = selected Then
+                var.activity_slots(i) -= 1
+                If var.activity_slots(i) = 0 Then MessageBox.Show("There are no slots left for this activity", "Annoucement")
+            End If
+        Next
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If TextBox1.Text = "" Then
+            MessageBox.Show("Enter a valid amount", "Annoucement")
+            Exit Sub
+        End If
+        If ComboBox1.SelectedItem Is Nothing Then
+            MessageBox.Show("Enter a mode of payment", "Annoucement")
+            Exit Sub
+        End If
+
+        var.sc_mode_of_payment = ComboBox1.SelectedItem
+        var.sc_payment = CInt(TextBox1.Text)
+        var.sc_selectedDate = New DateTime(DateTimePicker1.Value.Year, DateTimePicker1.Value.Month, 1)
+
+        MessageBox.Show($"You are now enrolled! Enjoy your {var.chosen_activity} class")
     End Sub
 End Class

@@ -33,6 +33,13 @@ Partial Class sc_main_menu
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel29 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel25 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel26 = New System.Windows.Forms.TableLayoutPanel()
@@ -123,6 +130,7 @@ Partial Class sc_main_menu
         CType(Me.library_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.TableLayoutPanel29.SuspendLayout()
         Me.TableLayoutPanel25.SuspendLayout()
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel26.SuspendLayout()
@@ -296,7 +304,7 @@ Partial Class sc_main_menu
         Me.Panel2.Controls.Add(Me.TableLayoutPanel29)
         Me.Panel2.Controls.Add(Me.TableLayoutPanel25)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 1557)
+        Me.Panel2.Location = New System.Drawing.Point(0, 1239)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1881, 1154)
@@ -304,17 +312,110 @@ Partial Class sc_main_menu
         '
         'TableLayoutPanel29
         '
-        Me.TableLayoutPanel29.ColumnCount = 2
-        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel29.ColumnCount = 4
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.35407!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.67252!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel29.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel29.Controls.Add(Me.Label23, 0, 1)
+        Me.TableLayoutPanel29.Controls.Add(Me.DateTimePicker1, 1, 1)
+        Me.TableLayoutPanel29.Controls.Add(Me.TextBox1, 1, 3)
+        Me.TableLayoutPanel29.Controls.Add(Me.Label24, 0, 3)
+        Me.TableLayoutPanel29.Controls.Add(Me.Button2, 2, 3)
+        Me.TableLayoutPanel29.Controls.Add(Me.Label25, 0, 2)
+        Me.TableLayoutPanel29.Controls.Add(Me.ComboBox2, 1, 2)
         Me.TableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel29.Location = New System.Drawing.Point(0, 725)
         Me.TableLayoutPanel29.Name = "TableLayoutPanel29"
-        Me.TableLayoutPanel29.RowCount = 2
-        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel29.Size = New System.Drawing.Size(1881, 100)
+        Me.TableLayoutPanel29.RowCount = 6
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.7647!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.TableLayoutPanel29.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.TableLayoutPanel29.Size = New System.Drawing.Size(1881, 537)
         Me.TableLayoutPanel29.TabIndex = 1
+        '
+        'Label23
+        '
+        Me.Label23.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(201, 68)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(3, 5, 3, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(266, 48)
+        Me.Label23.TabIndex = 7
+        Me.Label23.Text = "Choose date"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePicker1.Location = New System.Drawing.Point(473, 66)
+        Me.DateTimePicker1.MaxDate = New Date(2030, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePicker1.MinDate = New Date(2026, 2, 22, 23, 59, 59, 0)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(464, 55)
+        Me.DateTimePicker1.TabIndex = 0
+        Me.DateTimePicker1.Value = New Date(2026, 2, 22, 23, 59, 59, 0)
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(473, 254)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(464, 55)
+        Me.TextBox1.TabIndex = 11
+        '
+        'Label24
+        '
+        Me.Label24.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(275, 258)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(3, 7, 3, 0)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(192, 48)
+        Me.Label24.TabIndex = 9
+        Me.Label24.Text = "Payment"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(943, 254)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(249, 55)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "ENTER"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label25
+        '
+        Me.Label25.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(106, 164)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(3, 7, 3, 0)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(361, 48)
+        Me.Label25.TabIndex = 12
+        Me.Label25.Text = "Mode of Payment"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Cash", "Gcash", "Debit Card", "Credit Card"})
+        Me.ComboBox2.Location = New System.Drawing.Point(473, 160)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(464, 56)
+        Me.ComboBox2.TabIndex = 13
         '
         'TableLayoutPanel25
         '
@@ -547,7 +648,7 @@ Partial Class sc_main_menu
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"All", "Performing Arts", "Music", "Sports & Martial Arts", "Visual Arts"})
-        Me.ComboBox1.Location = New System.Drawing.Point(284, 417)
+        Me.ComboBox1.Location = New System.Drawing.Point(262, 102)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(655, 54)
         Me.ComboBox1.TabIndex = 2
@@ -557,7 +658,7 @@ Partial Class sc_main_menu
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(70, 417)
+        Me.Label12.Location = New System.Drawing.Point(74, 102)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(182, 46)
         Me.Label12.TabIndex = 1
@@ -578,7 +679,7 @@ Partial Class sc_main_menu
         Me.FlowLayoutPanel1.Controls.Add(Me.TableLayoutPanel19)
         Me.FlowLayoutPanel1.Controls.Add(Me.TableLayoutPanel21)
         Me.FlowLayoutPanel1.Controls.Add(Me.TableLayoutPanel23)
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 499)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 181)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1881, 1058)
@@ -1510,6 +1611,8 @@ Partial Class sc_main_menu
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        Me.TableLayoutPanel29.ResumeLayout(False)
+        Me.TableLayoutPanel29.PerformLayout()
         Me.TableLayoutPanel25.ResumeLayout(False)
         CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel26.ResumeLayout(False)
@@ -1673,4 +1776,11 @@ Partial Class sc_main_menu
     Friend WithEvents Label15 As Label
     Friend WithEvents Label22 As Label
     Friend WithEvents Label16 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents ComboBox2 As ComboBox
 End Class

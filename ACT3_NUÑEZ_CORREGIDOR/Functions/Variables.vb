@@ -364,4 +364,10 @@
     Public Shared sc_gender As String
     Public Shared sc_grade_lvl As String
 
+    Public Shared sc_payment As Integer
+    Public Shared sc_change As Integer
+    Public Shared sc_mode_of_payment As String
+
+    Public Shared sc_selectedDate As DateTime
+
 End Class
